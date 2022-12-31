@@ -1,20 +1,20 @@
-import Image from 'next/image'
-import Head from 'next/head'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Image from 'next/image' // https://nextjs.org/docs/api-reference/next/image import the image component from the next/image module
+import Head from 'next/head' // https://nextjs.org/docs/api-reference/next/head import the head component from the next/head module
+import Link from 'next/link' // https://nextjs.org/docs/api-reference/next/link import the link component from the next/link module
+import clsx from 'clsx' // import the clsx module to help with conditional class names
 
-import { Container } from '@/components/Container'
+import { Container } from '@/components/Container' // import the container component from the components folder
 import {
   TwitterIcon,
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/profilepicture.png'
+} from '@/components/SocialIcons' // import the social icons from the components folder
+import portraitImage from '@/images/profilepicture.png' // import the profile picture from the images folder
 
-function SocialLink({ className, href, children, icon: Icon }) {
-  return (
-    <li className={clsx(className, 'flex')}>
+function SocialLink({ className, href, children, icon: Icon }) { // create a social link component that takes in a class name, href, children, and icon as props
+  return ( // return the following jsx code to the page when the component is called in the page 
+    <li className={clsx(className, 'flex')}>       {/** use the clsx module to conditionally add the class name to the li element if it is passed in as a prop*/}
       <Link
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
