@@ -139,35 +139,42 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
+      company: 'Flying Dust First Nation',
+      title: 'Community Navigator',
       logo: logoPlanetaria,
-      start: '2019',
+      start: '2020',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
+      company: 'Emberstone Fusion Kitchen',
+      title: 'Chief Excutive Officer',
       logo: logoAirbnb,
-      start: '2014',
+      start: '2020',
+      end: 'Present',
+    },
+    {
+      company: 'Tolko OSB',
+      title: 'Saw Technician',
+      logo: logoFacebook,
+      start: '2018',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'SaskEnergy',
+      title: 'Service Technician',
+      logo: logoStarbucks,
+      start: '2017',
+      end: '2018',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
+      company: 'NorSask Foresty Products',
+      title: 'Industrial Millwright',
       logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      start: '2013',
+      end: '2017',
     },
   ]
 
@@ -175,7 +182,7 @@ function Resume() {
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Work</span>
+        <span className="ml-3">Employment</span>
       </h2>
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
@@ -211,7 +218,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://www.canva.com/design/DAEL69k6EK0/3v4RMlCO-MLhwNkxG9b2vQ/view?utm_content=DAEL69k6EK0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -261,10 +268,10 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur Engineer.
+            Data Scientist, Automation & Digital Specialist, and amateur Software Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co., where we develop technologies that empower regular people to explore the digital space on their own terms.
+            I am Jason Cardinal from Bigstone Cree Nation - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co. & Emberstone Fusion Kitchen, where we develop technologies that empower regular people to explore the digital space on their own terms.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
