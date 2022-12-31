@@ -29,7 +29,7 @@ export default function Uses() {
   return (
     <>
       <Head>
-        <title>Uses - Spencer Sharp</title>
+        <title>Uses - Jason Cardinal</title>
         <meta
           name="description"
           content="Software I use, gadgets I love, and other things I recommend."
@@ -41,8 +41,8 @@ export default function Uses() {
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
-            <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-              I was using an Intel-based 16” MacBook Pro prior to this and the
+            <Tool title="17” MSI, Leopard, 64GB RAM (2022)">
+              I was using an Intel-based I9 17” MSI Leopard prior to this and the
               difference is night and day. I’ve never heard the fans turn on a
               single time, even under the incredibly heavy loads I put it
               through with our various launch simulations.
