@@ -14,7 +14,7 @@ const projects = [
     name: 'Planetaria',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+    link: { href: 'http://cardinaltrading.co', label: 'cardinaltrading.co' },
     logo: logoPlanetaria,
   },
   {
@@ -62,7 +62,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Jason Cardinal</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."

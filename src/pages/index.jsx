@@ -251,23 +251,20 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co., where we develop technologies that empower regular people to explore the digital space on their own terms."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software designer, founder, and amateur Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co., where we develop technologies that empower regular people to explore the digital space on their own terms.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
