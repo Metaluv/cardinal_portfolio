@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState } from 'react'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { 
@@ -28,254 +29,1663 @@ import {
   Smartphone,
   Database,
   Palette,
-  Camera
+  Camera,
+  Scissors,
+  Dumbbell,
+  Book,
+  Utensils,
+  ShoppingBag,
+  Wrench,
+  Truck,
+  Calculator,
+  Users,
+  Flower2,
+  Gamepad,
+  GraduationCap,
+  PawPrint,
+  Watch,
+  Mountain,
+  Plane,
+  CreditCard,
+  Factory,
+  Droplets,
+  Trees,
+  Calendar,
+  Lock,
+  Bug,
+  Sparkles,
+  Zap,
+  Package,
+  Radio,
+  Tv,
+  Mic,
+  Mail,
+  Baby,
+  School,
+  HandHeart,
+  Pill,
+  Bus,
+  BedDouble,
+  Landmark,
+  ClipboardList,
+  Paintbrush,
+  Hammer,
+  Fish,
+  Lightbulb,
+  Stethoscope,
+  Brain as BrainIcon,
+  Rocket,
+  Bot,
+  Server,
+  Wifi,
+  BarChart,
+  Target,
+  MapPin,
+  FileText,
+  PenTool,
+  BookOpen,
+  ChefHat,
+  Shirt,
+  TreePine,
+  Headphones,
+  Award,
+  Video,
+  Settings,
+  Megaphone,
+  PlayCircle,
+  Bike,
+  HardHat,
+  Sun,
+  Moon,
+  Timer,
+  PizzaSlice,
+  Banknote,
+  Tool,
+  CircuitBoard
 } from 'lucide-react'
 
 const projects = [
-  // Featured ML Projects
+  // Machine Learning & AI Projects
   {
     name: 'Credit Card Fraud Detection',
-    description:
-      'Advanced anomaly detection system using ensemble methods to identify fraudulent transactions with 99.2% accuracy.',
+    description: 'Advanced anomaly detection system using ensemble methods to identify fraudulent transactions with 99.2% accuracy.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: DollarSign,
     category: 'Machine Learning',
   },
   {
     name: 'Customer Churn Prediction',
-    description:
-      'Predictive analytics model helping businesses identify at-risk customers using XGBoost and feature engineering.',
+    description: 'Predictive analytics model helping businesses identify at-risk customers using XGBoost and feature engineering.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: TrendingUp,
     category: 'Machine Learning',
   },
   {
     name: 'Time Series Sales Forecasting',
-    description:
-      'ARIMA and Prophet-based forecasting system for retail sales prediction with seasonal pattern analysis.',
+    description: 'ARIMA and Prophet-based forecasting system for retail sales prediction with seasonal pattern analysis.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: LineChart,
     category: 'Machine Learning',
   },
   {
     name: 'Music Genre Classification',
-    description:
-      'Deep learning audio classifier using CNNs and spectrograms to categorize music across 10 genres.',
+    description: 'Deep learning audio classifier using CNNs and spectrograms to categorize music across 10 genres.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Music,
     category: 'Deep Learning',
   },
   {
     name: 'Sentiment Analysis Platform',
-    description:
-      'NLP pipeline for social media sentiment analysis using BERT transformers and real-time data processing.',
+    description: 'NLP pipeline for social media sentiment analysis using BERT transformers and real-time data processing.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: MessageSquare,
     category: 'NLP',
   },
   {
     name: 'Plant Disease Detection',
-    description:
-      'Computer vision system using ResNet50 for agricultural disease identification from leaf images.',
+    description: 'Computer vision system using ResNet50 for agricultural disease identification from leaf images.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Leaf,
     category: 'Computer Vision',
   },
   {
     name: 'Loan Eligibility Predictor',
-    description:
-      'Risk assessment model using gradient boosting to automate loan approval decisions with explainable AI.',
+    description: 'Risk assessment model using gradient boosting to automate loan approval decisions with explainable AI.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: DollarSign,
     category: 'Machine Learning',
   },
   {
     name: 'Movie Recommendation System',
-    description:
-      'Collaborative and content-based filtering system delivering personalized movie recommendations.',
+    description: 'Collaborative and content-based filtering system delivering personalized movie recommendations.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Film,
     category: 'Machine Learning',
   },
   {
     name: 'Fake News Detection',
-    description:
-      'Text classification model using TF-IDF and ensemble methods to identify misinformation with high precision.',
+    description: 'Text classification model using TF-IDF and ensemble methods to identify misinformation with high precision.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Newspaper,
     category: 'NLP',
   },
   {
     name: 'Housing Price Prediction',
-    description:
-      'Regression model with advanced feature engineering for accurate real estate valuation predictions.',
+    description: 'Regression model with advanced feature engineering for accurate real estate valuation predictions.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Home,
     category: 'Machine Learning',
   },
   {
     name: 'Human Activity Recognition',
-    description:
-      'IoT sensor data analysis using LSTM networks for real-time activity classification from wearables.',
+    description: 'IoT sensor data analysis using LSTM networks for real-time activity classification from wearables.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Activity,
     category: 'Deep Learning',
   },
   {
     name: 'Image Classification System',
-    description:
-      'Transfer learning implementation with MobileNet for efficient multi-class image recognition.',
+    description: 'Transfer learning implementation with MobileNet for efficient multi-class image recognition.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Image,
     category: 'Computer Vision',
   },
-  
-  // Web Development Projects
+
+  // Business & Professional Services
   {
     name: 'Elite Consulting Group',
-    description:
-      'Professional business consulting website with modern design, service showcases, and client portal integration.',
+    description: 'Professional business consulting website with modern design, service showcases, and client portal integration.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Briefcase,
-    category: 'Web Development',
+    category: 'Professional Services',
   },
   {
-    name: 'EcoMarket E-commerce',
-    description:
-      'Sustainable products marketplace with advanced filtering, payment gateway, and inventory management.',
+    name: 'Johnson Law Firm',
+    description: 'Legal services website featuring case studies, attorney profiles, and client consultation booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: FileText,
+    category: 'Professional Services',
+  },
+  {
+    name: 'Precision Accounting',
+    description: 'Financial services platform with tax calculators, document portal, and appointment scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Calculator,
+    category: 'Professional Services',
+  },
+  {
+    name: 'Investment Advisors',
+    description: 'Wealth management platform with portfolio tracking, market insights, and client dashboards.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: TrendingUp,
+    category: 'Finance',
+  },
+  {
+    name: 'Insurance Experts',
+    description: 'Insurance comparison and management platform with quote generation and policy tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shield,
+    category: 'Finance',
+  },
+  {
+    name: 'Tax Preparation Pro',
+    description: 'Tax filing and preparation service with document upload, calculation tools, and filing status tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ClipboardList,
+    category: 'Finance',
+  },
+  {
+    name: 'Mortgage Solutions',
+    description: 'Mortgage lending platform with rate calculators, application processing, and document management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Home,
+    category: 'Finance',
+  },
+  {
+    name: 'Credit Repair Center',
+    description: 'Credit improvement service with score tracking, dispute management, and educational resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: CreditCard,
+    category: 'Finance',
+  },
+  {
+    name: 'LegalEase Law Firm',
+    description: 'Modern legal services platform with case management, document automation, and client communication.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Briefcase,
+    category: 'Professional Services',
+  },
+  {
+    name: 'Downtown Law Office',
+    description: 'Local law practice website with service areas, attorney bios, and online consultation booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: FileText,
+    category: 'Professional Services',
+  },
+  {
+    name: 'Local Credit Union',
+    description: 'Community banking platform with online banking, loan applications, and member resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Landmark,
+    category: 'Finance',
+  },
+
+  // Healthcare & Wellness
+  {
+    name: 'Wellness Medical Center',
+    description: 'Healthcare facility website with appointment booking, patient portal, and telemedicine integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Bright Dental Care',
+    description: 'Dental practice website with service listings, appointment scheduling, and patient education resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Happy Paws Veterinary',
+    description: 'Veterinary clinic website with pet care resources, appointment booking, and prescription refills.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Nutrition Counseling',
+    description: 'Nutritionist platform with meal planning tools, appointment scheduling, and progress tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Utensils,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Physical Therapy Center',
+    description: 'Rehabilitation center website with exercise libraries, appointment booking, and patient progress tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Activity,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Mental Health Counseling',
+    description: 'Therapy practice website with secure video sessions, resource library, and appointment management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Brain,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Yoga and Meditation Studio',
+    description: 'Wellness studio platform with class schedules, online booking, and virtual session streaming.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Fitness',
+  },
+  {
+    name: 'Chiropractor Wellness',
+    description: 'Chiropractic clinic website with service information, patient forms, and appointment scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Stethoscope,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Wellness Family Practice',
+    description: 'Family medicine clinic with patient portal, telehealth options, and health resource library.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Users,
+    category: 'Healthcare',
+  },
+  {
+    name: 'MindfulTherapy Center',
+    description: 'Mental health platform with therapist matching, online sessions, and self-help resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Brain,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Bright Smile Dentistry',
+    description: 'Modern dental practice with online booking, treatment information, and patient education.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Friendly Pet Clinic',
+    description: 'Animal hospital website with emergency information, service details, and appointment booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Family Dentist Practice',
+    description: 'Family dental care website with patient resources, insurance information, and online scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Users,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Community Health Center',
+    description: 'Public health facility website with service listings, health resources, and appointment system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Main Street Pharmacy',
+    description: 'Local pharmacy website with prescription refills, health tips, and vaccination scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Pill,
+    category: 'Healthcare',
+  },
+
+  // E-commerce & Retail
+  {
+    name: 'EcoMarket Ecommerce',
+    description: 'Sustainable products marketplace with advanced filtering, payment gateway, and inventory management.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: ShoppingCart,
-    category: 'Web Development',
+    category: 'E-commerce',
   },
   {
+    name: 'Chic Boutique Fashion',
+    description: 'Fashion retail website with lookbook galleries, size guides, and personalized recommendations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ShoppingBag,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Trendy Shoe Store',
+    description: 'Footwear e-commerce platform with virtual try-on, size recommendations, and wishlist features.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ShoppingBag,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Luxury Watch Gallery',
+    description: 'High-end watch retailer with 360° product views, authentication certificates, and concierge service.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Watch,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Vintage Vinyl Records',
+    description: 'Music store website with rare vinyl catalog, audio previews, and collector community features.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Music,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Outdoor Gear Central',
+    description: 'Adventure equipment store with gear guides, rental options, and expedition planning tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Mountain,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Farm Fresh Market',
+    description: 'Local produce marketplace with seasonal availability, delivery scheduling, and farm profiles.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Leaf,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Organic Farm Fresh',
+    description: 'Organic food delivery service with subscription boxes, farm sourcing, and recipe suggestions.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: TreePine,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Pet Supply Store',
+    description: 'Pet products e-commerce with auto-ship subscriptions, pet profiles, and vet-approved recommendations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Antique Treasures Shop',
+    description: 'Antique marketplace with detailed provenance, virtual showroom tours, and appraisal services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Package,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Comic Book Universe',
+    description: 'Comic retailer with pull list management, grading information, and community forums.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Book,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Hobby Craft Store',
+    description: 'Craft supplies retailer with project tutorials, workshop bookings, and custom kit builder.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Book Lovers Paradise',
+    description: 'Online bookstore with reading recommendations, book clubs, and author event calendars.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: BookOpen,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Vintage Clothing Boutique',
+    description: 'Curated vintage fashion with style guides, size conversion charts, and authentication services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shirt,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Sustainable Fashion Brand',
+    description: 'Eco-friendly clothing line with transparency reports, material sourcing, and recycling program.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Leaf,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Happy Paws Pet Store',
+    description: 'Pet supply shop with grooming bookings, training resources, and adoption event listings.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Cozy Corner Bookstore',
+    description: 'Independent bookstore with staff picks, reading nooks reservation, and local author features.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Book,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Corner Hardware Store',
+    description: 'Hardware retailer with tool rentals, DIY guides, and contractor account management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Hammer,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Neighborhood Market',
+    description: 'Local grocery store with weekly specials, loyalty program, and curbside pickup options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ShoppingCart,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Fresh Market Grocery',
+    description: 'Grocery chain website with digital coupons, meal planning, and delivery scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ShoppingCart,
+    category: 'E-commerce',
+  },
+
+  // Food & Beverage
+  {
+    name: 'Artisan Coffee Roasters',
+    description: 'Boutique coffee shop website with online ordering, subscription service, and loyalty program.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Coffee,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Bella Vista Restaurant',
+    description: 'Fine dining restaurant with online reservations, tasting menus, and private event booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Utensils,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Sweet Dreams Bakery',
+    description: 'Artisan bakery website with custom cake ordering, daily menu updates, and catering services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ChefHat,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Corner Deli Express',
+    description: 'Neighborhood deli with online ordering, catering menus, and lunch special promotions.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Utensils,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Craft Beer Brewery',
+    description: 'Microbrewery website with taproom events, beer club memberships, and brewery tour bookings.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Coffee,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Ice Cream Dreams',
+    description: 'Ice cream parlor with flavor calendars, party bookings, and mobile truck tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Utensils,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Local Coffee Shop',
+    description: 'Community coffee house with event calendar, online ordering, and loyalty rewards.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Coffee,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Tasty Wheels Food Truck',
+    description: 'Mobile food service with location tracking, pre-ordering, and catering requests.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Truck,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'CraftBrew Taphouse',
+    description: 'Craft beer bar with rotating tap lists, event hosting, and beer education classes.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Coffee,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Catering Services Elite',
+    description: 'Full-service catering with menu customization, event planning, and online quote system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Utensils,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Pizza Palace',
+    description: 'Pizza restaurant with online ordering, delivery tracking, and rewards program.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PizzaSlice,
+    category: 'Food & Beverage',
+  },
+  {
+    name: "Grandma's Kitchen",
+    description: 'Comfort food restaurant with family recipes, takeout ordering, and catering services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ChefHat,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Morning Glory Cafe',
+    description: 'Breakfast and brunch spot with online waitlist, menu updates, and coffee subscription.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sun,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Sunny Side Diner',
+    description: 'Classic diner with daily specials, online ordering, and nostalgic ambiance showcase.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sun,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Ice Cream Paradise',
+    description: 'Premium ice cream shop with seasonal flavors, party packages, and wholesale options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Meal Delivery Service',
+    description: 'Prepared meal delivery with dietary customization, subscription plans, and nutrition tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Truck,
+    category: 'Food & Beverage',
+  },
+  {
+    name: 'Cooking Classes Kitchen',
+    description: 'Culinary school with class schedules, chef profiles, and online cooking tutorials.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ChefHat,
+    category: 'Education',
+  },
+
+  // Technology & SaaS
+  {
     name: 'CloudSync SaaS Platform',
-    description:
-      'Enterprise cloud synchronization platform with real-time collaboration and version control features.',
+    description: 'Enterprise cloud synchronization platform with real-time collaboration and version control features.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Cloud,
-    category: 'Web Development',
+    category: 'SaaS',
   },
   {
     name: 'PayFlow Fintech Startup',
-    description:
-      'Digital payment processing platform with secure transactions, analytics dashboard, and API integration.',
+    description: 'Digital payment processing platform with secure transactions, analytics dashboard, and API integration.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: DollarSign,
-    category: 'Web Development',
+    category: 'Fintech',
   },
   {
-    name: 'MindForge AI Platform',
-    description:
-      'AI-powered business intelligence platform with predictive analytics and automated reporting.',
+    name: 'MindForge AI Startup',
+    description: 'AI-powered business intelligence platform with predictive analytics and automated reporting.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Brain,
-    category: 'Web Development',
-  },
-  {
-    name: 'Artisan Coffee Roasters',
-    description:
-      'Boutique coffee shop website with online ordering, subscription service, and loyalty program.',
-    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Coffee,
-    category: 'Web Development',
-  },
-  {
-    name: 'Wellness Medical Center',
-    description:
-      'Healthcare facility website with appointment booking, patient portal, and telemedicine integration.',
-    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Heart,
-    category: 'Web Development',
-  },
-  {
-    name: 'Creative Design Studio',
-    description:
-      'Portfolio website for design agency featuring dynamic galleries, case studies, and client testimonials.',
-    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Palette,
-    category: 'Web Development',
-  },
-  {
-    name: 'DataVault Analytics',
-    description:
-      'Business analytics platform with interactive dashboards, data visualization, and automated reporting.',
-    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Database,
-    category: 'Web Development',
+    category: 'AI/ML',
   },
   {
     name: 'TechFlow CRM Platform',
-    description:
-      'Customer relationship management system with sales pipeline, contact management, and automation.',
+    description: 'Customer relationship management system with sales pipeline, contact management, and automation.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Briefcase,
-    category: 'Web Development',
+    icon: Users,
+    category: 'SaaS',
   },
   {
-    name: 'Prime Real Estate',
-    description:
-      'Real estate platform with property listings, virtual tours, mortgage calculator, and agent portal.',
+    name: 'DataVault Analytics',
+    description: 'Business analytics platform with interactive dashboards, data visualization, and automated reporting.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Building,
-    category: 'Web Development',
+    icon: Database,
+    category: 'SaaS',
   },
   {
-    name: 'Cyber Security Shield',
-    description:
-      'Security services website with threat monitoring dashboard, vulnerability assessments, and client portal.',
+    name: 'StreamCast Media',
+    description: 'Live streaming platform with multi-channel broadcasting, viewer analytics, and monetization tools.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Shield,
-    category: 'Web Development',
+    icon: Video,
+    category: 'Media',
   },
   {
-    name: 'Elite Auto Repair',
-    description:
-      'Auto repair shop website with online booking, service tracking, and customer review system.',
+    name: 'CryptoTrade Exchange',
+    description: 'Cryptocurrency trading platform with real-time charts, portfolio management, and secure wallets.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Car,
-    category: 'Web Development',
+    icon: TrendingUp,
+    category: 'Fintech',
+  },
+  {
+    name: 'AutoDrive Logistics',
+    description: 'Fleet management system with GPS tracking, route optimization, and maintenance scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Truck,
+    category: 'Logistics',
+  },
+  {
+    name: 'QuantumCloud Computing',
+    description: 'Cloud infrastructure platform with scalable resources, DevOps tools, and enterprise security.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Server,
+    category: 'SaaS',
+  },
+  {
+    name: 'BioTech Research Labs',
+    description: 'Biotechnology company website with research publications, clinical trials, and investor relations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: CircuitBoard,
+    category: 'Technology',
+  },
+  {
+    name: 'RoboFactory Automation',
+    description: 'Industrial automation solutions with product configurators, case studies, and ROI calculators.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Bot,
+    category: 'Technology',
+  },
+  {
+    name: 'NeuralNet AI Systems',
+    description: 'Deep learning platform with model marketplace, training pipelines, and deployment tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Brain,
+    category: 'AI/ML',
+  },
+  {
+    name: 'SpaceLink Satellites',
+    description: 'Satellite communication services with coverage maps, service plans, and installation booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Wifi,
+    category: 'Technology',
+  },
+  {
+    name: 'TechFix Solutions',
+    description: 'IT support services with ticket system, knowledge base, and remote assistance tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Wrench,
+    category: 'Technology',
+  },
+  {
+    name: 'Digital Solutions Hub',
+    description: 'Digital transformation consulting with service portfolios, case studies, and resource libraries.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Laptop,
+    category: 'Technology',
+  },
+  {
+    name: 'Cloud Systems Pro',
+    description: 'Cloud migration services with assessment tools, pricing calculators, and migration guides.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Cloud,
+    category: 'Technology',
   },
   {
     name: 'Mobile App Studio',
-    description:
-      'App development company website showcasing portfolio, development process, and client case studies.',
+    description: 'App development company website showcasing portfolio, development process, and client case studies.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Smartphone,
-    category: 'Web Development',
+    category: 'Technology',
   },
   {
-    name: 'Photography Lens Studio',
-    description:
-      'Professional photography portfolio with gallery management, client proofing, and booking system.',
+    name: 'Cyber Security Shield',
+    description: 'Security services website with threat monitoring dashboard, vulnerability assessments, and client portal.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Camera,
-    category: 'Web Development',
+    icon: Shield,
+    category: 'Technology',
   },
   {
-    name: 'Local News Network',
-    description:
-      'News portal with content management system, subscription management, and multimedia integration.',
+    name: 'Data Analytics Plus',
+    description: 'Data science consulting with predictive modeling, visualization tools, and industry insights.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Globe,
-    category: 'Web Development',
+    icon: BarChart,
+    category: 'Technology',
+  },
+  {
+    name: 'Electronics Repair Hub',
+    description: 'Device repair service with online diagnostics, repair tracking, and warranty management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: CircuitBoard,
+    category: 'Technology',
+  },
+  {
+    name: 'TechRepair Hub',
+    description: 'Computer repair shop with service booking, status tracking, and tech support resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Tool,
+    category: 'Technology',
   },
   {
     name: 'FitnessTracker App',
-    description:
-      'Health and fitness web application with workout tracking, meal planning, and progress analytics.',
+    description: 'Health and fitness web application with workout tracking, meal planning, and progress analytics.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     icon: Activity,
-    category: 'Web Development',
+    category: 'SaaS',
   },
   {
-    name: 'Event Master Planning',
-    description:
-      'Event management platform with vendor directory, budget tracking, and guest management system.',
+    name: 'Tech Bootcamp Academy',
+    description: 'Coding bootcamp with course catalog, application portal, and career services platform.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    icon: Store,
-    category: 'Web Development',
+    icon: GraduationCap,
+    category: 'Education',
+  },
+
+  // Creative & Design Services
+  {
+    name: 'Creative Design Studio',
+    description: 'Portfolio website for design agency featuring dynamic galleries, case studies, and client testimonials.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Creative',
+  },
+  {
+    name: 'Photography Lens',
+    description: 'Professional photography portfolio with gallery management, client proofing, and booking system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Camera,
+    category: 'Creative',
+  },
+  {
+    name: 'Video Production Co',
+    description: 'Video production services with portfolio showcase, project quotes, and client collaboration tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Video,
+    category: 'Creative',
+  },
+  {
+    name: 'Marketing Mavens',
+    description: 'Digital marketing agency with campaign portfolios, service packages, and performance metrics.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Megaphone,
+    category: 'Marketing',
+  },
+  {
+    name: 'Print and Design Works',
+    description: 'Print shop website with online design tools, instant quotes, and order tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Paintbrush,
+    category: 'Creative',
+  },
+  {
+    name: 'CreativeStudio Design',
+    description: 'Multidisciplinary design studio with project galleries, team profiles, and collaboration portal.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PenTool,
+    category: 'Creative',
+  },
+  {
+    name: 'GreenSpace Architecture',
+    description: 'Sustainable architecture firm with project portfolios, 3D visualizations, and consultation booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Building,
+    category: 'Architecture',
+  },
+  {
+    name: 'Photography Studio Pro',
+    description: 'Commercial photography services with portfolio galleries, package pricing, and booking calendar.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Camera,
+    category: 'Creative',
+  },
+  {
+    name: 'ArtGallery Modern',
+    description: 'Contemporary art gallery with virtual exhibitions, artist profiles, and online art sales.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Creative',
+  },
+  {
+    name: 'Digital Marketing Agency',
+    description: 'Full-service marketing with SEO tools, campaign management, and analytics dashboards.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Target,
+    category: 'Marketing',
+  },
+  {
+    name: 'Content Creator Studio',
+    description: 'Content production hub with creator tools, collaboration features, and distribution networks.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PlayCircle,
+    category: 'Media',
+  },
+  {
+    name: 'Podcast Production Hub',
+    description: 'Podcast services with recording studios, editing tools, and distribution management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Mic,
+    category: 'Media',
+  },
+  {
+    name: 'Independent Film Studio',
+    description: 'Film production company with project showcases, crew resources, and investor relations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Film,
+    category: 'Media',
+  },
+  {
+    name: 'Community Radio Station',
+    description: 'Local radio station with live streaming, show schedules, and community event listings.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Radio,
+    category: 'Media',
+  },
+  {
+    name: 'Local News Network',
+    description: 'News portal with content management system, subscription management, and multimedia integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Globe,
+    category: 'Media',
+  },
+  {
+    name: 'Quick Print Solutions',
+    description: 'Printing services with online ordering, design templates, and rush order options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Paintbrush,
+    category: 'Creative',
+  },
+
+  // Beauty & Personal Care
+  {
+    name: 'Urban Hair Studio',
+    description: 'Hair salon website with stylist portfolios, online booking, and virtual consultation options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Scissors,
+    category: 'Beauty',
+  },
+  {
+    name: 'Glamour Beauty Spa',
+    description: 'Luxury spa website with treatment menus, package deals, and gift certificate purchases.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Beauty',
+  },
+  {
+    name: 'Nail Art Studio',
+    description: 'Nail salon with design galleries, appointment booking, and loyalty program management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Beauty',
+  },
+  {
+    name: 'Fresh Cuts Barbershop',
+    description: 'Barbershop website with barber profiles, service menu, and walk-in wait time display.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Scissors,
+    category: 'Beauty',
+  },
+  {
+    name: 'Local Hair Salon',
+    description: 'Neighborhood salon with stylist booking, service galleries, and product recommendations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Scissors,
+    category: 'Beauty',
+  },
+  {
+    name: 'Luxury Spa Retreat',
+    description: 'Destination spa with accommodation booking, wellness programs, and retreat packages.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Beauty',
+  },
+
+  // Fitness & Sports
+  {
+    name: 'Peak Performance Gym',
+    description: 'Fitness center website with class schedules, trainer profiles, and membership management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Dumbbell,
+    category: 'Fitness',
+  },
+  {
+    name: 'UrbanFit Gym Chain',
+    description: 'Multi-location fitness franchise with membership portal, class booking, and virtual workouts.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Dumbbell,
+    category: 'Fitness',
+  },
+  {
+    name: 'Tennis Club Elite',
+    description: 'Tennis facility with court reservations, lesson bookings, and tournament management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Target,
+    category: 'Sports',
+  },
+  {
+    name: 'Golf Pro Shop',
+    description: 'Golf course website with tee time booking, pro shop, and membership services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Target,
+    category: 'Sports',
+  },
+  {
+    name: 'Swim School Academy',
+    description: 'Swimming instruction with class schedules, instructor profiles, and progress tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Droplets,
+    category: 'Sports',
+  },
+  {
+    name: 'Elite Sports Training',
+    description: 'Athletic training facility with program details, coach profiles, and performance tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Award,
+    category: 'Sports',
+  },
+  {
+    name: 'YogaZen Studio',
+    description: 'Yoga studio with class schedules, instructor bios, and workshop registration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Fitness',
+  },
+  {
+    name: 'Dance Academy Elite',
+    description: 'Dance school with class schedules, recital information, and online registration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Music,
+    category: 'Arts',
+  },
+  {
+    name: 'Dance Academy Stars',
+    description: 'Professional dance training with audition prep, competition teams, and showcase events.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Award,
+    category: 'Arts',
+  },
+  {
+    name: 'Mountain Bike Rentals',
+    description: 'Bike rental service with online reservations, trail maps, and guided tour bookings.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Bike,
+    category: 'Sports',
+  },
+  {
+    name: 'Outdoor Adventure Gear',
+    description: 'Adventure sports equipment with gear guides, rental options, and trip planning resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Mountain,
+    category: 'Sports',
+  },
+  {
+    name: 'Meditation Center Zen',
+    description: 'Meditation facility with class schedules, retreat programs, and mindfulness resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Brain,
+    category: 'Wellness',
+  },
+
+  // Automotive Services
+  {
+    name: 'Elite Auto Repair',
+    description: 'Auto repair shop website with online booking, service tracking, and customer review system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Automotive',
+  },
+  {
+    name: 'Luxury Car Wash',
+    description: 'Premium car detailing with package options, membership plans, and online scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Automotive',
+  },
+  {
+    name: 'Speed Tire Center',
+    description: 'Tire service center with inventory search, installation booking, and warranty tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Automotive',
+  },
+  {
+    name: 'Classic Auto Sales',
+    description: 'Used car dealership with inventory listings, financing options, and trade-in valuations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Automotive',
+  },
+  {
+    name: 'Motor Sports Garage',
+    description: 'Performance auto shop with custom builds, racing services, and parts catalog.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Zap,
+    category: 'Automotive',
+  },
+  {
+    name: 'AutoFix Garage',
+    description: 'Local auto repair with service booking, maintenance reminders, and loyalty discounts.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Wrench,
+    category: 'Automotive',
+  },
+  {
+    name: 'Friendly Auto Shop',
+    description: 'Community auto service with transparent pricing, service history, and appointment booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Tool,
+    category: 'Automotive',
+  },
+  {
+    name: 'Tire Service Center',
+    description: 'Tire shop with brand selection, installation scheduling, and road hazard warranties.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Automotive',
+  },
+  {
+    name: 'Luxury Car Detailing',
+    description: 'High-end auto detailing with ceramic coating, paint protection, and mobile services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Automotive',
+  },
+  {
+    name: 'Bicycle Repair Shop',
+    description: 'Bike repair service with tune-up packages, parts catalog, and pickup/delivery options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Bike,
+    category: 'Automotive',
+  },
+
+  // Home & Construction Services
+  {
+    name: 'Dream Home Builders',
+    description: 'Custom home construction with project galleries, floor plans, and client testimonials.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Home,
+    category: 'Construction',
+  },
+  {
+    name: 'Garden Paradise Landscape',
+    description: 'Landscaping services with design portfolios, maintenance plans, and instant quotes.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Trees,
+    category: 'Home Services',
+  },
+  {
+    name: 'Reliable Plumbing Pro',
+    description: 'Plumbing services with emergency booking, service areas, and maintenance plans.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Droplets,
+    category: 'Home Services',
+  },
+  {
+    name: 'Power Electric Solutions',
+    description: 'Electrical contractor with service requests, safety resources, and energy efficiency consultations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Zap,
+    category: 'Home Services',
+  },
+  {
+    name: 'Perfect Paint Pros',
+    description: 'Painting contractor with color consultations, project galleries, and online estimates.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Paintbrush,
+    category: 'Home Services',
+  },
+  {
+    name: 'Clean Pro Services',
+    description: 'Professional cleaning company with service packages, online booking, and recurring schedules.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Home Services',
+  },
+  {
+    name: 'Custom Furniture Makers',
+    description: 'Bespoke furniture design with portfolio galleries, material selection, and quote requests.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Hammer,
+    category: 'Manufacturing',
+  },
+  {
+    name: 'Metal Fabrication Works',
+    description: 'Custom metalwork with project examples, capabilities showcase, and quote system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Factory,
+    category: 'Manufacturing',
+  },
+  {
+    name: 'Ceramic Pottery Studio',
+    description: 'Pottery workshop with class schedules, gallery shop, and custom commission requests.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Arts',
+  },
+  {
+    name: 'Glass Art Creations',
+    description: 'Stained glass studio with commission portfolios, restoration services, and workshop classes.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Arts',
+  },
+  {
+    name: 'Woodworking Craft Shop',
+    description: 'Custom woodwork with project galleries, wood selection guide, and commission inquiries.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Trees,
+    category: 'Manufacturing',
+  },
+  {
+    name: 'Solar Energy Solutions',
+    description: 'Solar installation company with savings calculator, system designs, and financing options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sun,
+    category: 'Energy',
+  },
+  {
+    name: 'Water Treatment Systems',
+    description: 'Water purification services with product catalog, water testing, and maintenance plans.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Droplets,
+    category: 'Home Services',
+  },
+  {
+    name: 'Recycling Center Pro',
+    description: 'Waste management facility with service schedules, accepted materials, and education resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Leaf,
+    category: 'Environmental',
+  },
+  {
+    name: 'Landscape Supply Co',
+    description: 'Landscaping materials supplier with product catalog, delivery options, and bulk pricing.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Trees,
+    category: 'Home Services',
+  },
+  {
+    name: 'EcoEnergy Solutions',
+    description: 'Renewable energy consulting with efficiency audits, system design, and incentive guidance.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Leaf,
+    category: 'Energy',
+  },
+  {
+    name: 'UrbanPlanning Group',
+    description: 'Urban development firm with project portfolios, community engagement, and planning resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Building,
+    category: 'Architecture',
+  },
+  {
+    name: 'Home Renovation Pros',
+    description: 'Remodeling contractor with before/after galleries, design services, and project timelines.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Hammer,
+    category: 'Construction',
+  },
+  {
+    name: 'Professional Cleaning Co',
+    description: 'Commercial cleaning services with service areas, contract options, and quality guarantees.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Home Services',
+  },
+  {
+    name: 'Carpet Cleaning Pro',
+    description: 'Carpet and upholstery cleaning with instant quotes, booking system, and satisfaction guarantee.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Home Services',
+  },
+  {
+    name: 'Pool Maintenance Pro',
+    description: 'Pool service company with maintenance plans, repair services, and water chemistry resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Droplets,
+    category: 'Home Services',
+  },
+  {
+    name: 'Home Security Systems',
+    description: 'Security installation with product comparison, monitoring plans, and smart home integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shield,
+    category: 'Security',
+  },
+  {
+    name: 'Night Owl Security',
+    description: 'Security guard services with patrol options, event security, and instant quote system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shield,
+    category: 'Security',
+  },
+  {
+    name: 'Security Guard Services',
+    description: 'Professional security with armed/unarmed options, risk assessments, and emergency response.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shield,
+    category: 'Security',
+  },
+  {
+    name: 'Locksmith Express',
+    description: '24/7 locksmith service with emergency response, security upgrades, and key duplication.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Lock,
+    category: 'Security',
+  },
+  {
+    name: 'Pest Control Experts',
+    description: 'Pest management services with treatment plans, prevention tips, and emergency services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Bug,
+    category: 'Home Services',
+  },
+  {
+    name: 'Urban Farming Co-op',
+    description: 'Community farm with CSA memberships, volunteer opportunities, and educational programs.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Leaf,
+    category: 'Agriculture',
+  },
+  {
+    name: 'Garden Center Plus',
+    description: 'Garden supply store with plant care guides, landscaping tips, and seasonal workshops.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Trees,
+    category: 'Retail',
+  },
+  {
+    name: 'Home Sweet Home Realty',
+    description: 'Real estate agency with property listings, virtual tours, and market analysis tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Home,
+    category: 'Real Estate',
+  },
+  {
+    name: 'Prime Real Estate',
+    description: 'Real estate platform with property listings, virtual tours, mortgage calculator, and agent portal.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Building,
+    category: 'Real Estate',
+  },
+  {
+    name: 'Property Management Plus',
+    description: 'Property management with tenant portals, maintenance requests, and owner dashboards.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Building,
+    category: 'Real Estate',
+  },
+  {
+    name: 'Professional Dry Cleaning',
+    description: 'Dry cleaning service with pickup/delivery, rush options, and garment care tips.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Sparkles,
+    category: 'Services',
+  },
+  {
+    name: 'Quick Wash Laundromat',
+    description: 'Self-service laundry with machine availability, wash-and-fold service, and loyalty program.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Droplets,
+    category: 'Services',
+  },
+  {
+    name: 'Storage Solutions Plus',
+    description: 'Self-storage facility with unit sizes, online rental, and payment management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Package,
+    category: 'Services',
+  },
+  {
+    name: 'Equipment Rental Pro',
+    description: 'Tool and equipment rental with availability calendar, delivery options, and contractor accounts.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Tool,
+    category: 'Services',
+  },
+
+  // Events & Entertainment
+  {
+    name: 'Star Event Planning',
+    description: 'Event planning services with portfolio galleries, vendor networks, and consultation booking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Calendar,
+    category: 'Events',
+  },
+  {
+    name: 'Party Rental Express',
+    description: 'Party equipment rental with inventory catalog, package deals, and delivery scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Package,
+    category: 'Events',
+  },
+  {
+    name: 'Wedding Planning Dreams',
+    description: 'Wedding planning service with inspiration galleries, vendor directory, and budget tools.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Events',
+  },
+  {
+    name: 'EventMaster Planning',
+    description: 'Event management platform with vendor directory, budget tracking, and guest management system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Calendar,
+    category: 'Events',
+  },
+  {
+    name: 'Wedding Planners Elite',
+    description: 'Luxury wedding planning with design portfolios, vendor partnerships, and day-of coordination.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Events',
+  },
+  {
+    name: 'Gaming Zone Arcade',
+    description: 'Gaming arcade with party packages, tournament schedules, and membership programs.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Gamepad,
+    category: 'Entertainment',
+  },
+  {
+    name: 'Retro Gaming Arcade',
+    description: 'Vintage arcade with game library, event hosting, and restoration services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Gamepad,
+    category: 'Entertainment',
+  },
+  {
+    name: 'Family Fun Bowling',
+    description: 'Bowling alley with lane reservations, league information, and party packages.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Target,
+    category: 'Entertainment',
+  },
+  {
+    name: 'Kids Zone Playground',
+    description: 'Indoor playground with party hosting, membership options, and parent amenities.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Baby,
+    category: 'Entertainment',
+  },
+  {
+    name: 'Kidz Play Center',
+    description: 'Children\'s activity center with birthday parties, camps, and drop-in play options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Baby,
+    category: 'Entertainment',
+  },
+
+  // Education & Training
+  {
+    name: 'Bright Minds Tutoring',
+    description: 'Tutoring center with subject specialists, online sessions, and progress tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: GraduationCap,
+    category: 'Education',
+  },
+  {
+    name: 'Language Learning Center',
+    description: 'Language school with course offerings, placement tests, and cultural immersion programs.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Globe,
+    category: 'Education',
+  },
+  {
+    name: 'Computer Skills Academy',
+    description: 'IT training center with certification courses, lab access, and career placement services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Laptop,
+    category: 'Education',
+  },
+  {
+    name: 'Art Classes Studio',
+    description: 'Art education center with class schedules, supply lists, and student gallery exhibitions.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Education',
+  },
+  {
+    name: 'Music Theory School',
+    description: 'Music education with theory courses, ear training, and composition workshops.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Music,
+    category: 'Education',
+  },
+  {
+    name: 'Music Lessons Studio',
+    description: 'Private music instruction with teacher profiles, recital schedules, and online lessons.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Music,
+    category: 'Education',
+  },
+  {
+    name: 'MusicLessons Academy',
+    description: 'Comprehensive music school with instrument rentals, theory classes, and performance opportunities.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Headphones,
+    category: 'Education',
+  },
+  {
+    name: 'Craft Workshop Studio',
+    description: 'DIY craft classes with project tutorials, supply kits, and community gallery.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Education',
+  },
+  {
+    name: 'Tutoring Center Plus',
+    description: 'Academic support center with test prep, homework help, and college counseling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: School,
+    category: 'Education',
+  },
+
+  // Transportation & Logistics
+  {
+    name: 'City Taxi Service',
+    description: 'Taxi company with app booking, fare estimates, and corporate accounts.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Transportation',
+  },
+  {
+    name: 'Luxury Limo Rentals',
+    description: 'Limousine service with fleet showcase, instant quotes, and special event packages.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Transportation',
+  },
+  {
+    name: 'Moving Company Pro',
+    description: 'Moving services with instant estimates, packing supplies, and shipment tracking.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Truck,
+    category: 'Logistics',
+  },
+  {
+    name: 'Delivery Express',
+    description: 'Local delivery service with real-time tracking, route optimization, and bulk shipping.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Package,
+    category: 'Logistics',
+  },
+  {
+    name: 'Airport Shuttle Plus',
+    description: 'Airport transportation with flight tracking, group bookings, and loyalty discounts.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Plane,
+    category: 'Transportation',
+  },
+  {
+    name: 'City Bus Tours',
+    description: 'Sightseeing tours with route information, multilingual guides, and combo packages.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Bus,
+    category: 'Tourism',
+  },
+
+  // Travel & Hospitality
+  {
+    name: 'Adventure Tours Guide',
+    description: 'Adventure travel company with trip itineraries, booking system, and travel insurance options.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Mountain,
+    category: 'Tourism',
+  },
+  {
+    name: 'TravelGuide Agency',
+    description: 'Travel agency with destination guides, package deals, and personalized trip planning.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Plane,
+    category: 'Tourism',
+  },
+  {
+    name: 'Mountain Hiking Tours',
+    description: 'Guided hiking service with trail difficulty ratings, gear lists, and group bookings.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Mountain,
+    category: 'Tourism',
+  },
+  {
+    name: 'Cozy Bed and Breakfast',
+    description: 'B&B accommodation with room galleries, local attraction guides, and package deals.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: BedDouble,
+    category: 'Hospitality',
+  },
+
+  // Social Services
+  {
+    name: 'Sunny Day Daycare',
+    description: 'Childcare center with enrollment information, curriculum details, and parent communication portal.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Baby,
+    category: 'Childcare',
+  },
+  {
+    name: 'Dog Training Academy',
+    description: 'Professional dog training with class schedules, training videos, and behavior resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Pet Services',
+  },
+  {
+    name: 'Pet Grooming Salon',
+    description: 'Pet grooming services with appointment booking, service packages, and photo galleries.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Pet Services',
+  },
+  {
+    name: 'Animal Boarding Hotel',
+    description: 'Pet boarding facility with virtual tours, webcam access, and reservation system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Pet Services',
+  },
+  {
+    name: 'Senior Care Services',
+    description: 'Elder care services with care plans, family resources, and caregiver matching.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Healthcare',
+  },
+  {
+    name: 'Childcare Learning Center',
+    description: 'Early education center with curriculum information, enrollment forms, and parent resources.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: School,
+    category: 'Childcare',
+  },
+  {
+    name: 'Subscription Box Service',
+    description: 'Curated subscription boxes with customization options, gift subscriptions, and member perks.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Package,
+    category: 'E-commerce',
+  },
+  {
+    name: 'Bloom Flower Boutique',
+    description: 'Florist shop with arrangement galleries, delivery options, and event services.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Flower2,
+    category: 'Retail',
+  },
+  {
+    name: 'Flower Power Florist',
+    description: 'Flower shop with seasonal arrangements, wedding services, and same-day delivery.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Flower2,
+    category: 'Retail',
+  },
+  {
+    name: 'Dog Walking Service',
+    description: 'Professional dog walking with GPS tracking, photo updates, and flexible scheduling.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Pet Services',
+  },
+  {
+    name: 'Happy Tails Grooming',
+    description: 'Mobile pet grooming with online booking, service areas, and loyalty rewards.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: PawPrint,
+    category: 'Pet Services',
+  },
+  {
+    name: 'Helping Hands Charity',
+    description: 'Non-profit organization with donation portal, volunteer signup, and impact reports.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: HandHeart,
+    category: 'Non-Profit',
+  },
+  {
+    name: 'Community Center Hub',
+    description: 'Community facility with program schedules, room rentals, and event calendars.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Users,
+    category: 'Community',
   },
 ]
+
+// Define categories with better organization
+const categories = {
+  'AI & Technology': ['Machine Learning', 'Deep Learning', 'NLP', 'Computer Vision', 'AI/ML', 'Technology', 'SaaS', 'Fintech', 'Logistics', 'Media'],
+  'Business Services': ['Professional Services', 'Finance', 'Marketing', 'Real Estate', 'Insurance'],
+  'Healthcare & Wellness': ['Healthcare', 'Fitness', 'Wellness', 'Beauty'],
+  'Retail & E-commerce': ['E-commerce', 'Retail'],
+  'Food & Hospitality': ['Food & Beverage', 'Hospitality', 'Tourism'],
+  'Creative & Design': ['Creative', 'Architecture', 'Arts', 'Manufacturing'],
+  'Home & Construction': ['Construction', 'Home Services', 'Energy', 'Environmental', 'Agriculture', 'Security'],
+  'Education & Community': ['Education', 'Childcare', 'Community', 'Non-Profit'],
+  'Transportation & Services': ['Automotive', 'Transportation', 'Pet Services', 'Services', 'Events', 'Entertainment', 'Sports'],
+}
+
+// Flatten categories to get all individual categories
+const allIndividualCategories = ['All', ...new Set(projects.map(p => p.category))].sort()
 
 function LinkIcon(props) {
   return (
@@ -289,25 +1699,49 @@ function LinkIcon(props) {
 }
 
 export default function Projects() {
+  const [selectedCategory, setSelectedCategory] = useState('All')
+  
+  const filteredProjects = selectedCategory === 'All' 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory)
+
   return (
     <>
       <Head>
         <title>Projects - Jason Cardinal</title>
         <meta
           name="description"
-          content="Machine learning and data science projects showcasing expertise in predictive analytics, deep learning, and AI applications."
+          content="Full-stack development and AI portfolio showcasing 200+ projects across machine learning, web development, and business solutions."
         />
       </Head>
       <SimpleLayout
         title="Full-Stack Development & AI Portfolio"
-        intro="A comprehensive showcase of 30+ projects spanning machine learning, web development, and business solutions. From AI-powered fraud detection to enterprise SaaS platforms, each project demonstrates expertise in delivering end-to-end technology solutions for diverse industries."
+        intro="A comprehensive showcase of 200+ projects spanning machine learning, web development, and business solutions. From AI-powered fraud detection to enterprise SaaS platforms, each project demonstrates expertise in delivering end-to-end technology solutions for diverse industries."
       >
+        {/* Category Filter */}
+        <div className="mb-8 flex flex-wrap gap-2">
+          {allIndividualCategories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                selectedCategory === category
+                  ? 'bg-cardinal-600 text-white'
+                  : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700'
+              }`}
+            >
+              {category} ({category === 'All' ? projects.length : projects.filter(p => p.category === category).length})
+            </button>
+          ))}
+        </div>
+
+        {/* Projects Grid */}
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {projects.map((project) => (
-            <Card as="li" key={project.name}>
+          {filteredProjects.map((project) => (
+            <Card as="li" key={project.name} className="relative">
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 {project.icon && (
                   <project.icon className="h-6 w-6 text-cardinal-600 dark:text-cardinal-400" />
@@ -317,11 +1751,11 @@ export default function Projects() {
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>
               </h2>
               {project.category && (
-                <span className="mt-2 inline-block rounded-full bg-cardinal-50 px-3 py-1 text-xs font-semibold text-cardinal-700 dark:bg-cardinal-500/10 dark:text-cardinal-400">
+                <span className="relative z-10 mt-2 inline-block rounded-full bg-cardinal-50 px-3 py-1 text-xs font-semibold text-cardinal-700 dark:bg-cardinal-500/10 dark:text-cardinal-400">
                   {project.category}
                 </span>
               )}
-              <Card.Description className="mt-2">{project.description}</Card.Description>
+              <Card.Description className="relative z-10 mt-2">{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-cardinal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
