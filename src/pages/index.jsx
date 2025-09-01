@@ -236,12 +236,12 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
-          {/* Profile image first on mobile, second on desktop */}
-          <div className="flex-shrink-0 order-1 lg:order-2">
+          {/* Profile image hidden on mobile, visible on desktop */}
+          <div className="hidden lg:flex flex-shrink-0 order-2">
             <Image
               src={profilePicture}
               alt="Jason Cardinal"
-              className="h-48 w-48 sm:h-64 sm:w-64 lg:h-80 lg:w-80 xl:h-96 xl:w-96 object-contain mx-auto"
+              className="h-80 w-80 xl:h-96 xl:w-96 object-contain mx-auto"
               priority
             />
           </div>
