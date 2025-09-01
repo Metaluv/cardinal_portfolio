@@ -10,40 +10,102 @@ import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
+  // Featured ML Projects
   {
-    name: 'Planetaria',
+    name: 'Credit Card Fraud Detection',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://cardinaltrading.co', label: 'cardinaltrading.co' },
+      'Advanced anomaly detection system using ensemble methods to identify fraudulent transactions with 99.2% accuracy.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     logo: logoPlanetaria,
+    category: 'Machine Learning',
   },
   {
-    name: 'Animaginary',
+    name: 'Customer Churn Prediction',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'Predictive analytics model helping businesses identify at-risk customers using XGBoost and feature engineering.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     logo: logoAnimaginary,
+    category: 'Machine Learning',
   },
   {
-    name: 'HelioStream',
+    name: 'Time Series Sales Forecasting',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'ARIMA and Prophet-based forecasting system for retail sales prediction with seasonal pattern analysis.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     logo: logoHelioStream,
+    category: 'Machine Learning',
   },
   {
-    name: 'cosmOS',
+    name: 'Music Genre Classification',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
+      'Deep learning audio classifier using CNNs and spectrograms to categorize music across 10 genres.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     logo: logoCosmos,
+    category: 'Deep Learning',
   },
   {
-    name: 'OpenShuttle',
+    name: 'Sentiment Analysis Platform',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'NLP pipeline for social media sentiment analysis using BERT transformers and real-time data processing.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
     logo: logoOpenShuttle,
+    category: 'NLP',
+  },
+  {
+    name: 'Plant Disease Detection',
+    description:
+      'Computer vision system using ResNet50 for agricultural disease identification from leaf images.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoPlanetaria,
+    category: 'Computer Vision',
+  },
+  {
+    name: 'Loan Eligibility Predictor',
+    description:
+      'Risk assessment model using gradient boosting to automate loan approval decisions with explainable AI.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoAnimaginary,
+    category: 'Machine Learning',
+  },
+  {
+    name: 'Movie Recommendation System',
+    description:
+      'Collaborative and content-based filtering system delivering personalized movie recommendations.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoHelioStream,
+    category: 'Machine Learning',
+  },
+  {
+    name: 'Fake News Detection',
+    description:
+      'Text classification model using TF-IDF and ensemble methods to identify misinformation with high precision.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoCosmos,
+    category: 'NLP',
+  },
+  {
+    name: 'Housing Price Prediction',
+    description:
+      'Regression model with advanced feature engineering for accurate real estate valuation predictions.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoOpenShuttle,
+    category: 'Machine Learning',
+  },
+  {
+    name: 'Human Activity Recognition',
+    description:
+      'IoT sensor data analysis using LSTM networks for real-time activity classification from wearables.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoPlanetaria,
+    category: 'Deep Learning',
+  },
+  {
+    name: 'Image Classification System',
+    description:
+      'Transfer learning implementation with MobileNet for efficient multi-class image recognition.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    logo: logoAnimaginary,
+    category: 'Computer Vision',
   },
 ]
 
@@ -65,12 +127,12 @@ export default function Projects() {
         <title>Projects - Jason Cardinal</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Machine learning and data science projects showcasing expertise in predictive analytics, deep learning, and AI applications."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Machine Learning & Data Science Portfolio"
+        intro="A collection of my machine learning projects spanning computer vision, natural language processing, predictive analytics, and deep learning. Each project demonstrates practical applications of AI technologies to solve real-world problems, from fraud detection to recommendation systems."
       >
         <ul
           role="list"
@@ -89,7 +151,12 @@ export default function Projects() {
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>
               </h2>
-              <Card.Description>{project.description}</Card.Description>
+              {project.category && (
+                <span className="mt-2 inline-block rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-700 dark:bg-teal-500/10 dark:text-teal-400">
+                  {project.category}
+                </span>
+              )}
+              <Card.Description className="mt-2">{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
