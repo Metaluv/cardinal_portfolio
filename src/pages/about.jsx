@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons' // import the social icons from the components folder
-import ctcLogo from '@/images/logos/CTC_LOGO_1.svg' // import the business logo from the images folder
+import ctcLogo from '@/images/logos/CTC_LOGO.svg' // import the business logo from the images folder
 
 function SocialLink({ className, href, children, icon: Icon }) { // create a social link component that takes in a class name, href, children, and icon as props
   return ( // return the following jsx code to the page when the component is called in the page 
