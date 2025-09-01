@@ -250,7 +250,7 @@ function Avatar({ large = false, className, ...props }) {
 }
 
 export function Header() {
-  let isHomePage = useRouter().pathname === '/'
+  let isHomePage = false // Disable special home page treatment
 
   let headerRef = useRef()
   let avatarRef = useRef()

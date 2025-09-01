@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons' // import the social icons from the components folder
-import ctcLogo from '@/images/logos/CTC_LOGO.svg' // import the business logo from the images folder
+import profilePicture from '@/images/logos/JC_Profile(1).svg' // import the profile picture from the images folder
 
 function SocialLink({ className, href, children, icon: Icon }) { // create a social link component that takes in a class name, href, children, and icon as props
   return ( // return the following jsx code to the page when the component is called in the page 
@@ -52,10 +52,10 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={ctcLogo}
-                alt="Cardinal Trading Co."
+                src={profilePicture}
+                alt="Jason Cardinal"
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rounded-2xl bg-white p-8 object-contain shadow-lg dark:bg-zinc-800"
+                className="aspect-square rounded-2xl object-contain shadow-lg"
               />
             </div>
           </div>
