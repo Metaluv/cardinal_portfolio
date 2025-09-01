@@ -234,7 +234,7 @@ export default function Home({ articles }) {
           content="Consultant helping teams ship software, build data products, launch modern web apps, automate workflows, and prototype robotics systems. Based in Meadow Lake, SK."
         />
       </Head>
-      <Container className="mt-9">
+      <Container className="mt-16 sm:mt-32">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
           {/* Profile image hidden on mobile, visible on desktop */}
           <div className="hidden lg:flex flex-shrink-0 order-2">
