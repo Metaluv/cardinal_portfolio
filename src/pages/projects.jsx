@@ -13,7 +13,22 @@ import {
   Newspaper, 
   Home, 
   Activity, 
-  Image 
+  Image,
+  Globe,
+  ShoppingCart,
+  Coffee,
+  Briefcase,
+  Store,
+  Building,
+  Heart,
+  Car,
+  Laptop,
+  Shield,
+  Cloud,
+  Smartphone,
+  Database,
+  Palette,
+  Camera
 } from 'lucide-react'
 
 const projects = [
@@ -114,6 +129,152 @@ const projects = [
     icon: Image,
     category: 'Computer Vision',
   },
+  
+  // Web Development Projects
+  {
+    name: 'Elite Consulting Group',
+    description:
+      'Professional business consulting website with modern design, service showcases, and client portal integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Briefcase,
+    category: 'Web Development',
+  },
+  {
+    name: 'EcoMarket E-commerce',
+    description:
+      'Sustainable products marketplace with advanced filtering, payment gateway, and inventory management.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: ShoppingCart,
+    category: 'Web Development',
+  },
+  {
+    name: 'CloudSync SaaS Platform',
+    description:
+      'Enterprise cloud synchronization platform with real-time collaboration and version control features.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Cloud,
+    category: 'Web Development',
+  },
+  {
+    name: 'PayFlow Fintech Startup',
+    description:
+      'Digital payment processing platform with secure transactions, analytics dashboard, and API integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: DollarSign,
+    category: 'Web Development',
+  },
+  {
+    name: 'MindForge AI Platform',
+    description:
+      'AI-powered business intelligence platform with predictive analytics and automated reporting.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Brain,
+    category: 'Web Development',
+  },
+  {
+    name: 'Artisan Coffee Roasters',
+    description:
+      'Boutique coffee shop website with online ordering, subscription service, and loyalty program.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Coffee,
+    category: 'Web Development',
+  },
+  {
+    name: 'Wellness Medical Center',
+    description:
+      'Healthcare facility website with appointment booking, patient portal, and telemedicine integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Heart,
+    category: 'Web Development',
+  },
+  {
+    name: 'Creative Design Studio',
+    description:
+      'Portfolio website for design agency featuring dynamic galleries, case studies, and client testimonials.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Palette,
+    category: 'Web Development',
+  },
+  {
+    name: 'DataVault Analytics',
+    description:
+      'Business analytics platform with interactive dashboards, data visualization, and automated reporting.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Database,
+    category: 'Web Development',
+  },
+  {
+    name: 'TechFlow CRM Platform',
+    description:
+      'Customer relationship management system with sales pipeline, contact management, and automation.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Briefcase,
+    category: 'Web Development',
+  },
+  {
+    name: 'Prime Real Estate',
+    description:
+      'Real estate platform with property listings, virtual tours, mortgage calculator, and agent portal.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Building,
+    category: 'Web Development',
+  },
+  {
+    name: 'Cyber Security Shield',
+    description:
+      'Security services website with threat monitoring dashboard, vulnerability assessments, and client portal.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Shield,
+    category: 'Web Development',
+  },
+  {
+    name: 'Elite Auto Repair',
+    description:
+      'Auto repair shop website with online booking, service tracking, and customer review system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Car,
+    category: 'Web Development',
+  },
+  {
+    name: 'Mobile App Studio',
+    description:
+      'App development company website showcasing portfolio, development process, and client case studies.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Smartphone,
+    category: 'Web Development',
+  },
+  {
+    name: 'Photography Lens Studio',
+    description:
+      'Professional photography portfolio with gallery management, client proofing, and booking system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Camera,
+    category: 'Web Development',
+  },
+  {
+    name: 'Local News Network',
+    description:
+      'News portal with content management system, subscription management, and multimedia integration.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Globe,
+    category: 'Web Development',
+  },
+  {
+    name: 'FitnessTracker App',
+    description:
+      'Health and fitness web application with workout tracking, meal planning, and progress analytics.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Activity,
+    category: 'Web Development',
+  },
+  {
+    name: 'Event Master Planning',
+    description:
+      'Event management platform with vendor directory, budget tracking, and guest management system.',
+    link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
+    icon: Store,
+    category: 'Web Development',
+  },
 ]
 
 function LinkIcon(props) {
@@ -138,8 +299,8 @@ export default function Projects() {
         />
       </Head>
       <SimpleLayout
-        title="Machine Learning & Data Science Portfolio"
-        intro="A collection of my machine learning projects spanning computer vision, natural language processing, predictive analytics, and deep learning. Each project demonstrates practical applications of AI technologies to solve real-world problems, from fraud detection to recommendation systems."
+        title="Full-Stack Development & AI Portfolio"
+        intro="A comprehensive showcase of 30+ projects spanning machine learning, web development, and business solutions. From AI-powered fraud detection to enterprise SaaS platforms, each project demonstrates expertise in delivering end-to-end technology solutions for diverse industries."
       >
         <ul
           role="list"
