@@ -1,13 +1,20 @@
-import Image from 'next/image'
 import Head from 'next/head'
-
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import { 
+  Brain, 
+  TrendingUp, 
+  LineChart, 
+  Music, 
+  MessageSquare, 
+  Leaf, 
+  DollarSign, 
+  Film, 
+  Newspaper, 
+  Home, 
+  Activity, 
+  Image 
+} from 'lucide-react'
 
 const projects = [
   // Featured ML Projects
@@ -16,7 +23,7 @@ const projects = [
     description:
       'Advanced anomaly detection system using ensemble methods to identify fraudulent transactions with 99.2% accuracy.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoPlanetaria,
+    icon: DollarSign,
     category: 'Machine Learning',
   },
   {
@@ -24,7 +31,7 @@ const projects = [
     description:
       'Predictive analytics model helping businesses identify at-risk customers using XGBoost and feature engineering.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoAnimaginary,
+    icon: TrendingUp,
     category: 'Machine Learning',
   },
   {
@@ -32,7 +39,7 @@ const projects = [
     description:
       'ARIMA and Prophet-based forecasting system for retail sales prediction with seasonal pattern analysis.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoHelioStream,
+    icon: LineChart,
     category: 'Machine Learning',
   },
   {
@@ -40,7 +47,7 @@ const projects = [
     description:
       'Deep learning audio classifier using CNNs and spectrograms to categorize music across 10 genres.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoCosmos,
+    icon: Music,
     category: 'Deep Learning',
   },
   {
@@ -48,7 +55,7 @@ const projects = [
     description:
       'NLP pipeline for social media sentiment analysis using BERT transformers and real-time data processing.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoOpenShuttle,
+    icon: MessageSquare,
     category: 'NLP',
   },
   {
@@ -56,7 +63,7 @@ const projects = [
     description:
       'Computer vision system using ResNet50 for agricultural disease identification from leaf images.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoPlanetaria,
+    icon: Leaf,
     category: 'Computer Vision',
   },
   {
@@ -64,7 +71,7 @@ const projects = [
     description:
       'Risk assessment model using gradient boosting to automate loan approval decisions with explainable AI.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoAnimaginary,
+    icon: DollarSign,
     category: 'Machine Learning',
   },
   {
@@ -72,7 +79,7 @@ const projects = [
     description:
       'Collaborative and content-based filtering system delivering personalized movie recommendations.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoHelioStream,
+    icon: Film,
     category: 'Machine Learning',
   },
   {
@@ -80,7 +87,7 @@ const projects = [
     description:
       'Text classification model using TF-IDF and ensemble methods to identify misinformation with high precision.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoCosmos,
+    icon: Newspaper,
     category: 'NLP',
   },
   {
@@ -88,7 +95,7 @@ const projects = [
     description:
       'Regression model with advanced feature engineering for accurate real estate valuation predictions.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoOpenShuttle,
+    icon: Home,
     category: 'Machine Learning',
   },
   {
@@ -96,7 +103,7 @@ const projects = [
     description:
       'IoT sensor data analysis using LSTM networks for real-time activity classification from wearables.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoPlanetaria,
+    icon: Activity,
     category: 'Deep Learning',
   },
   {
@@ -104,7 +111,7 @@ const projects = [
     description:
       'Transfer learning implementation with MobileNet for efficient multi-class image recognition.',
     link: { href: 'https://github.com/Metaluv', label: 'github.com/Metaluv' },
-    logo: logoAnimaginary,
+    icon: Image,
     category: 'Computer Vision',
   },
 ]
@@ -141,12 +148,9 @@ export default function Projects() {
           {projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <Image
-                  src={project.logo}
-                  alt=""
-                  className="h-8 w-8"
-                  unoptimized
-                />
+                {project.icon && (
+                  <project.icon className="h-6 w-6 text-cardinal-600 dark:text-cardinal-400" />
+                )}
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>

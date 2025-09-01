@@ -12,11 +12,8 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
 import profilePicture from '@/images/logos/JC_Profile(1).svg'
+import { Users, Utensils, Factory, Wrench, TreePine } from 'lucide-react'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -137,7 +134,7 @@ function Resume() {
     {
       company: 'Flying Dust First Nation',
       title: 'Community Navigator',
-      logo: logoPlanetaria,
+      icon: Users,
       start: '2020',
       end: {
         label: 'Present',
@@ -147,28 +144,28 @@ function Resume() {
     {
       company: 'Emberstone Fusion Kitchen',
       title: 'Chief Executive Officer',
-      logo: logoAirbnb,
+      icon: Utensils,
       start: '2020',
       end: 'Present',
     },
     {
       company: 'Tolko OSB',
       title: 'Saw Technician',
-      logo: logoFacebook,
+      icon: Factory,
       start: '2018',
       end: '2019',
     },
     {
       company: 'SaskEnergy',
       title: 'Service Technician',
-      logo: logoStarbucks,
+      icon: Wrench,
       start: '2017',
       end: '2018',
     },
     {
       company: 'NorSask Forestry Products',
       title: 'Industrial Millwright',
-      logo: logoStarbucks,
+      icon: TreePine,
       start: '2013',
       end: '2017',
     },
@@ -183,8 +180,10 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              {role.icon && (
+                <role.icon className="h-5 w-5 text-cardinal-600 dark:text-cardinal-400" />
+              )}
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
               <dt className="sr-only">Company</dt>
