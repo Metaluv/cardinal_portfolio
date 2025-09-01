@@ -1,0 +1,2221 @@
+[
+  {
+    "name": "Credit Card Fraud Detection",
+    "repo_name": "credit-card-fraud-detection",
+    "description": "Advanced anomaly detection system using ensemble methods to identify fraudulent transactions with 99.2% accuracy.",
+    "icon": "DollarSign",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Customer Churn Prediction",
+    "repo_name": "customer-churn-prediction",
+    "description": "Predictive analytics model helping businesses identify at-risk customers using XGBoost and feature engineering.",
+    "icon": "TrendingUp",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Time Series Sales Forecasting",
+    "repo_name": "time-series-sales-forecasting",
+    "description": "ARIMA and Prophet-based forecasting system for retail sales prediction with seasonal pattern analysis.",
+    "icon": "LineChart",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Music Genre Classification",
+    "repo_name": "music-genre-classification",
+    "description": "Deep learning audio classifier using CNNs and spectrograms to categorize music across 10 genres.",
+    "icon": "Music",
+    "category": "Deep Learning"
+  },
+  {
+    "name": "Sentiment Analysis Platform",
+    "repo_name": "sentiment-analysis-platform",
+    "description": "NLP pipeline for social media sentiment analysis using BERT transformers and real-time data processing.",
+    "icon": "MessageSquare",
+    "category": "NLP"
+  },
+  {
+    "name": "Plant Disease Detection",
+    "repo_name": "plant-disease-detection",
+    "description": "Computer vision system using ResNet50 for agricultural disease identification from leaf images.",
+    "icon": "Leaf",
+    "category": "Computer Vision"
+  },
+  {
+    "name": "Loan Eligibility Predictor",
+    "repo_name": "loan-eligibility-predictor",
+    "description": "Risk assessment model using gradient boosting to automate loan approval decisions with explainable AI.",
+    "icon": "DollarSign",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Movie Recommendation System",
+    "repo_name": "movie-recommendation-system",
+    "description": "Collaborative and content-based filtering system delivering personalized movie recommendations.",
+    "icon": "Film",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Fake News Detection",
+    "repo_name": "fake-news-detection",
+    "description": "Text classification model using TF-IDF and ensemble methods to identify misinformation with high precision.",
+    "icon": "Newspaper",
+    "category": "NLP"
+  },
+  {
+    "name": "Housing Price Prediction",
+    "repo_name": "housing-price-prediction",
+    "description": "Regression model with advanced feature engineering for accurate real estate valuation predictions.",
+    "icon": "Home",
+    "category": "Machine Learning"
+  },
+  {
+    "name": "Human Activity Recognition",
+    "repo_name": "human-activity-recognition",
+    "description": "IoT sensor data analysis using LSTM networks for real-time activity classification from wearables.",
+    "icon": "Activity",
+    "category": "Deep Learning"
+  },
+  {
+    "name": "Image Classification System",
+    "repo_name": "image-classification-system",
+    "description": "Transfer learning implementation with MobileNet for efficient multi-class image recognition.",
+    "icon": "Image",
+    "category": "Computer Vision"
+  },
+  {
+    "name": "Elite Consulting Group",
+    "repo_name": "elite-consulting-group",
+    "description": "Professional business consulting website with modern design, service showcases, and client portal integration.",
+    "icon": "Briefcase",
+    "category": "Professional Services"
+  },
+  {
+    "name": "Johnson Law Firm",
+    "repo_name": "johnson-law-firm",
+    "description": "Legal services website featuring case studies, attorney profiles, and client consultation booking.",
+    "icon": "FileText",
+    "category": "Professional Services"
+  },
+  {
+    "name": "Precision Accounting",
+    "repo_name": "precision-accounting",
+    "description": "Financial services platform with tax calculators, document portal, and appointment scheduling.",
+    "icon": "Calculator",
+    "category": "Professional Services"
+  },
+  {
+    "name": "Investment Advisors",
+    "repo_name": "investment-advisors",
+    "description": "Wealth management platform with portfolio tracking, market insights, and client dashboards.",
+    "icon": "TrendingUp",
+    "category": "Finance"
+  },
+  {
+    "name": "Insurance Experts",
+    "repo_name": "insurance-experts",
+    "description": "Insurance comparison and management platform with quote generation and policy tracking.",
+    "icon": "Shield",
+    "category": "Finance"
+  },
+  {
+    "name": "Tax Preparation Pro",
+    "repo_name": "tax-preparation-pro",
+    "description": "Tax filing and preparation service with document upload, calculation tools, and filing status tracking.",
+    "icon": "ClipboardList",
+    "category": "Finance"
+  },
+  {
+    "name": "Mortgage Solutions",
+    "repo_name": "mortgage-solutions",
+    "description": "Mortgage lending platform with rate calculators, application processing, and document management.",
+    "icon": "Home",
+    "category": "Finance"
+  },
+  {
+    "name": "Credit Repair Center",
+    "repo_name": "credit-repair-center",
+    "description": "Credit improvement service with score tracking, dispute management, and educational resources.",
+    "icon": "CreditCard",
+    "category": "Finance"
+  },
+  {
+    "name": "LegalEase Law Firm",
+    "repo_name": "legalease-law-firm",
+    "description": "Modern legal services platform with case management, document automation, and client communication.",
+    "icon": "Briefcase",
+    "category": "Professional Services"
+  },
+  {
+    "name": "Downtown Law Office",
+    "repo_name": "downtown-law-office",
+    "description": "Local law practice website with service areas, attorney bios, and online consultation booking.",
+    "icon": "FileText",
+    "category": "Professional Services"
+  },
+  {
+    "name": "Local Credit Union",
+    "repo_name": "local-credit-union",
+    "description": "Community banking platform with online banking, loan applications, and member resources.",
+    "icon": "Landmark",
+    "category": "Finance"
+  },
+  {
+    "name": "Wellness Medical Center",
+    "repo_name": "wellness-medical-center",
+    "description": "Healthcare facility website with appointment booking, patient portal, and telemedicine integration.",
+    "icon": "Heart",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Bright Dental Care",
+    "repo_name": "bright-dental-care",
+    "description": "Dental practice website with service listings, appointment scheduling, and patient education resources.",
+    "icon": "Sparkles",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Happy Paws Veterinary",
+    "repo_name": "happy-paws-veterinary",
+    "description": "Veterinary clinic website with pet care resources, appointment booking, and prescription refills.",
+    "icon": "PawPrint",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Nutrition Counseling",
+    "repo_name": "nutrition-counseling",
+    "description": "Nutritionist platform with meal planning tools, appointment scheduling, and progress tracking.",
+    "icon": "Utensils",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Physical Therapy Center",
+    "repo_name": "physical-therapy-center",
+    "description": "Rehabilitation center website with exercise libraries, appointment booking, and patient progress tracking.",
+    "icon": "Activity",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Mental Health Counseling",
+    "repo_name": "mental-health-counseling",
+    "description": "Therapy practice website with secure video sessions, resource library, and appointment management.",
+    "icon": "Brain",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Yoga and Meditation Studio",
+    "repo_name": "yoga-and-meditation-studio",
+    "description": "Wellness studio platform with class schedules, online booking, and virtual session streaming.",
+    "icon": "Heart",
+    "category": "Fitness"
+  },
+  {
+    "name": "Chiropractor Wellness",
+    "repo_name": "chiropractor-wellness",
+    "description": "Chiropractic clinic website with service information, patient forms, and appointment scheduling.",
+    "icon": "Stethoscope",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Wellness Family Practice",
+    "repo_name": "wellness-family-practice",
+    "description": "Family medicine clinic with patient portal, telehealth options, and health resource library.",
+    "icon": "Users",
+    "category": "Healthcare"
+  },
+  {
+    "name": "MindfulTherapy Center",
+    "repo_name": "mindfultherapy-center",
+    "description": "Mental health platform with therapist matching, online sessions, and self-help resources.",
+    "icon": "Brain",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Bright Smile Dentistry",
+    "repo_name": "bright-smile-dentistry",
+    "description": "Modern dental practice with online booking, treatment information, and patient education.",
+    "icon": "Sparkles",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Friendly Pet Clinic",
+    "repo_name": "friendly-pet-clinic",
+    "description": "Animal hospital website with emergency information, service details, and appointment booking.",
+    "icon": "PawPrint",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Family Dentist Practice",
+    "repo_name": "family-dentist-practice",
+    "description": "Family dental care website with patient resources, insurance information, and online scheduling.",
+    "icon": "Users",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Community Health Center",
+    "repo_name": "community-health-center",
+    "description": "Public health facility website with service listings, health resources, and appointment system.",
+    "icon": "Heart",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Main Street Pharmacy",
+    "repo_name": "main-street-pharmacy",
+    "description": "Local pharmacy website with prescription refills, health tips, and vaccination scheduling.",
+    "icon": "Pill",
+    "category": "Healthcare"
+  },
+  {
+    "name": "EcoMarket Ecommerce",
+    "repo_name": "ecomarket-ecommerce",
+    "description": "Sustainable products marketplace with advanced filtering, payment gateway, and inventory management.",
+    "icon": "ShoppingCart",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Chic Boutique Fashion",
+    "repo_name": "chic-boutique-fashion",
+    "description": "Fashion retail website with lookbook galleries, size guides, and personalized recommendations.",
+    "icon": "ShoppingBag",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Trendy Shoe Store",
+    "repo_name": "trendy-shoe-store",
+    "description": "Footwear e-commerce platform with virtual try-on, size recommendations, and wishlist features.",
+    "icon": "ShoppingBag",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Luxury Watch Gallery",
+    "repo_name": "luxury-watch-gallery",
+    "description": "High-end watch retailer with 360\u00b0 product views, authentication certificates, and concierge service.",
+    "icon": "Watch",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Vintage Vinyl Records",
+    "repo_name": "vintage-vinyl-records",
+    "description": "Music store website with rare vinyl catalog, audio previews, and collector community features.",
+    "icon": "Music",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Outdoor Gear Central",
+    "repo_name": "outdoor-gear-central",
+    "description": "Adventure equipment store with gear guides, rental options, and expedition planning tools.",
+    "icon": "Mountain",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Farm Fresh Market",
+    "repo_name": "farm-fresh-market",
+    "description": "Local produce marketplace with seasonal availability, delivery scheduling, and farm profiles.",
+    "icon": "Leaf",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Organic Farm Fresh",
+    "repo_name": "organic-farm-fresh",
+    "description": "Organic food delivery service with subscription boxes, farm sourcing, and recipe suggestions.",
+    "icon": "TreePine",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Pet Supply Store",
+    "repo_name": "pet-supply-store",
+    "description": "Pet products e-commerce with auto-ship subscriptions, pet profiles, and vet-approved recommendations.",
+    "icon": "PawPrint",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Antique Treasures Shop",
+    "repo_name": "antique-treasures-shop",
+    "description": "Antique marketplace with detailed provenance, virtual showroom tours, and appraisal services.",
+    "icon": "Package",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Comic Book Universe",
+    "repo_name": "comic-book-universe",
+    "description": "Comic retailer with pull list management, grading information, and community forums.",
+    "icon": "Book",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Hobby Craft Store",
+    "repo_name": "hobby-craft-store",
+    "description": "Craft supplies retailer with project tutorials, workshop bookings, and custom kit builder.",
+    "icon": "Palette",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Book Lovers Paradise",
+    "repo_name": "book-lovers-paradise",
+    "description": "Online bookstore with reading recommendations, book clubs, and author event calendars.",
+    "icon": "BookOpen",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Vintage Clothing Boutique",
+    "repo_name": "vintage-clothing-boutique",
+    "description": "Curated vintage fashion with style guides, size conversion charts, and authentication services.",
+    "icon": "Shirt",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Sustainable Fashion Brand",
+    "repo_name": "sustainable-fashion-brand",
+    "description": "Eco-friendly clothing line with transparency reports, material sourcing, and recycling program.",
+    "icon": "Leaf",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Happy Paws Pet Store",
+    "repo_name": "happy-paws-pet-store",
+    "description": "Pet supply shop with grooming bookings, training resources, and adoption event listings.",
+    "icon": "PawPrint",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Cozy Corner Bookstore",
+    "repo_name": "cozy-corner-bookstore",
+    "description": "Independent bookstore with staff picks, reading nooks reservation, and local author features.",
+    "icon": "Book",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Corner Hardware Store",
+    "repo_name": "corner-hardware-store",
+    "description": "Hardware retailer with tool rentals, DIY guides, and contractor account management.",
+    "icon": "Hammer",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Neighborhood Market",
+    "repo_name": "neighborhood-market",
+    "description": "Local grocery store with weekly specials, loyalty program, and curbside pickup options.",
+    "icon": "ShoppingCart",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Fresh Market Grocery",
+    "repo_name": "fresh-market-grocery",
+    "description": "Grocery chain website with digital coupons, meal planning, and delivery scheduling.",
+    "icon": "ShoppingCart",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Artisan Coffee Roasters",
+    "repo_name": "artisan-coffee-roasters",
+    "description": "Boutique coffee shop website with online ordering, subscription service, and loyalty program.",
+    "icon": "Coffee",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Bella Vista Restaurant",
+    "repo_name": "bella-vista-restaurant",
+    "description": "Fine dining restaurant with online reservations, tasting menus, and private event booking.",
+    "icon": "Utensils",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Sweet Dreams Bakery",
+    "repo_name": "sweet-dreams-bakery",
+    "description": "Artisan bakery website with custom cake ordering, daily menu updates, and catering services.",
+    "icon": "ChefHat",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Corner Deli Express",
+    "repo_name": "corner-deli-express",
+    "description": "Neighborhood deli with online ordering, catering menus, and lunch special promotions.",
+    "icon": "Utensils",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Craft Beer Brewery",
+    "repo_name": "craft-beer-brewery",
+    "description": "Microbrewery website with taproom events, beer club memberships, and brewery tour bookings.",
+    "icon": "Coffee",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Ice Cream Dreams",
+    "repo_name": "ice-cream-dreams",
+    "description": "Ice cream parlor with flavor calendars, party bookings, and mobile truck tracking.",
+    "icon": "Utensils",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Local Coffee Shop",
+    "repo_name": "local-coffee-shop",
+    "description": "Community coffee house with event calendar, online ordering, and loyalty rewards.",
+    "icon": "Coffee",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Tasty Wheels Food Truck",
+    "repo_name": "tasty-wheels-food-truck",
+    "description": "Mobile food service with location tracking, pre-ordering, and catering requests.",
+    "icon": "Truck",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "CraftBrew Taphouse",
+    "repo_name": "craftbrew-taphouse",
+    "description": "Craft beer bar with rotating tap lists, event hosting, and beer education classes.",
+    "icon": "Coffee",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Catering Services Elite",
+    "repo_name": "catering-services-elite",
+    "description": "Full-service catering with menu customization, event planning, and online quote system.",
+    "icon": "Utensils",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Pizza Palace",
+    "repo_name": "pizza-palace",
+    "description": "Pizza restaurant with online ordering, delivery tracking, and rewards program.",
+    "icon": "PizzaSlice",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Morning Glory Cafe",
+    "repo_name": "morning-glory-cafe",
+    "description": "Breakfast and brunch spot with online waitlist, menu updates, and coffee subscription.",
+    "icon": "Sun",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Sunny Side Diner",
+    "repo_name": "sunny-side-diner",
+    "description": "Classic diner with daily specials, online ordering, and nostalgic ambiance showcase.",
+    "icon": "Sun",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Ice Cream Paradise",
+    "repo_name": "ice-cream-paradise",
+    "description": "Premium ice cream shop with seasonal flavors, party packages, and wholesale options.",
+    "icon": "Sparkles",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Meal Delivery Service",
+    "repo_name": "meal-delivery-service",
+    "description": "Prepared meal delivery with dietary customization, subscription plans, and nutrition tracking.",
+    "icon": "Truck",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Cooking Classes Kitchen",
+    "repo_name": "cooking-classes-kitchen",
+    "description": "Culinary school with class schedules, chef profiles, and online cooking tutorials.",
+    "icon": "ChefHat",
+    "category": "Education"
+  },
+  {
+    "name": "CloudSync SaaS Platform",
+    "repo_name": "cloudsync-saas-platform",
+    "description": "Enterprise cloud synchronization platform with real-time collaboration and version control features.",
+    "icon": "Cloud",
+    "category": "SaaS"
+  },
+  {
+    "name": "PayFlow Fintech Startup",
+    "repo_name": "payflow-fintech-startup",
+    "description": "Digital payment processing platform with secure transactions, analytics dashboard, and API integration.",
+    "icon": "DollarSign",
+    "category": "Fintech"
+  },
+  {
+    "name": "MindForge AI Startup",
+    "repo_name": "mindforge-ai-startup",
+    "description": "AI-powered business intelligence platform with predictive analytics and automated reporting.",
+    "icon": "Brain",
+    "category": "AI/ML"
+  },
+  {
+    "name": "TechFlow CRM Platform",
+    "repo_name": "techflow-crm-platform",
+    "description": "Customer relationship management system with sales pipeline, contact management, and automation.",
+    "icon": "Users",
+    "category": "SaaS"
+  },
+  {
+    "name": "DataVault Analytics",
+    "repo_name": "datavault-analytics",
+    "description": "Business analytics platform with interactive dashboards, data visualization, and automated reporting.",
+    "icon": "Database",
+    "category": "SaaS"
+  },
+  {
+    "name": "StreamCast Media",
+    "repo_name": "streamcast-media",
+    "description": "Live streaming platform with multi-channel broadcasting, viewer analytics, and monetization tools.",
+    "icon": "Video",
+    "category": "Media"
+  },
+  {
+    "name": "CryptoTrade Exchange",
+    "repo_name": "cryptotrade-exchange",
+    "description": "Cryptocurrency trading platform with real-time charts, portfolio management, and secure wallets.",
+    "icon": "TrendingUp",
+    "category": "Fintech"
+  },
+  {
+    "name": "AutoDrive Logistics",
+    "repo_name": "autodrive-logistics",
+    "description": "Fleet management system with GPS tracking, route optimization, and maintenance scheduling.",
+    "icon": "Truck",
+    "category": "Logistics"
+  },
+  {
+    "name": "QuantumCloud Computing",
+    "repo_name": "quantumcloud-computing",
+    "description": "Cloud infrastructure platform with scalable resources, DevOps tools, and enterprise security.",
+    "icon": "Server",
+    "category": "SaaS"
+  },
+  {
+    "name": "BioTech Research Labs",
+    "repo_name": "biotech-research-labs",
+    "description": "Biotechnology company website with research publications, clinical trials, and investor relations.",
+    "icon": "CircuitBoard",
+    "category": "Technology"
+  },
+  {
+    "name": "RoboFactory Automation",
+    "repo_name": "robofactory-automation",
+    "description": "Industrial automation solutions with product configurators, case studies, and ROI calculators.",
+    "icon": "Bot",
+    "category": "Technology"
+  },
+  {
+    "name": "NeuralNet AI Systems",
+    "repo_name": "neuralnet-ai-systems",
+    "description": "Deep learning platform with model marketplace, training pipelines, and deployment tools.",
+    "icon": "Brain",
+    "category": "AI/ML"
+  },
+  {
+    "name": "SpaceLink Satellites",
+    "repo_name": "spacelink-satellites",
+    "description": "Satellite communication services with coverage maps, service plans, and installation booking.",
+    "icon": "Wifi",
+    "category": "Technology"
+  },
+  {
+    "name": "TechFix Solutions",
+    "repo_name": "techfix-solutions",
+    "description": "IT support services with ticket system, knowledge base, and remote assistance tools.",
+    "icon": "Wrench",
+    "category": "Technology"
+  },
+  {
+    "name": "Digital Solutions Hub",
+    "repo_name": "digital-solutions-hub",
+    "description": "Digital transformation consulting with service portfolios, case studies, and resource libraries.",
+    "icon": "Laptop",
+    "category": "Technology"
+  },
+  {
+    "name": "Cloud Systems Pro",
+    "repo_name": "cloud-systems-pro",
+    "description": "Cloud migration services with assessment tools, pricing calculators, and migration guides.",
+    "icon": "Cloud",
+    "category": "Technology"
+  },
+  {
+    "name": "Mobile App Studio",
+    "repo_name": "mobile-app-studio",
+    "description": "App development company website showcasing portfolio, development process, and client case studies.",
+    "icon": "Smartphone",
+    "category": "Technology"
+  },
+  {
+    "name": "Cyber Security Shield",
+    "repo_name": "cyber-security-shield",
+    "description": "Security services website with threat monitoring dashboard, vulnerability assessments, and client portal.",
+    "icon": "Shield",
+    "category": "Technology"
+  },
+  {
+    "name": "Data Analytics Plus",
+    "repo_name": "data-analytics-plus",
+    "description": "Data science consulting with predictive modeling, visualization tools, and industry insights.",
+    "icon": "BarChart",
+    "category": "Technology"
+  },
+  {
+    "name": "Electronics Repair Hub",
+    "repo_name": "electronics-repair-hub",
+    "description": "Device repair service with online diagnostics, repair tracking, and warranty management.",
+    "icon": "CircuitBoard",
+    "category": "Technology"
+  },
+  {
+    "name": "TechRepair Hub",
+    "repo_name": "techrepair-hub",
+    "description": "Computer repair shop with service booking, status tracking, and tech support resources.",
+    "icon": "Tool",
+    "category": "Technology"
+  },
+  {
+    "name": "FitnessTracker App",
+    "repo_name": "fitnesstracker-app",
+    "description": "Health and fitness web application with workout tracking, meal planning, and progress analytics.",
+    "icon": "Activity",
+    "category": "SaaS"
+  },
+  {
+    "name": "Tech Bootcamp Academy",
+    "repo_name": "tech-bootcamp-academy",
+    "description": "Coding bootcamp with course catalog, application portal, and career services platform.",
+    "icon": "GraduationCap",
+    "category": "Education"
+  },
+  {
+    "name": "Creative Design Studio",
+    "repo_name": "creative-design-studio",
+    "description": "Portfolio website for design agency featuring dynamic galleries, case studies, and client testimonials.",
+    "icon": "Palette",
+    "category": "Creative"
+  },
+  {
+    "name": "Photography Lens",
+    "repo_name": "photography-lens",
+    "description": "Professional photography portfolio with gallery management, client proofing, and booking system.",
+    "icon": "Camera",
+    "category": "Creative"
+  },
+  {
+    "name": "Video Production Co",
+    "repo_name": "video-production-co",
+    "description": "Video production services with portfolio showcase, project quotes, and client collaboration tools.",
+    "icon": "Video",
+    "category": "Creative"
+  },
+  {
+    "name": "Marketing Mavens",
+    "repo_name": "marketing-mavens",
+    "description": "Digital marketing agency with campaign portfolios, service packages, and performance metrics.",
+    "icon": "Megaphone",
+    "category": "Marketing"
+  },
+  {
+    "name": "Print and Design Works",
+    "repo_name": "print-and-design-works",
+    "description": "Print shop website with online design tools, instant quotes, and order tracking.",
+    "icon": "Paintbrush",
+    "category": "Creative"
+  },
+  {
+    "name": "CreativeStudio Design",
+    "repo_name": "creativestudio-design",
+    "description": "Multidisciplinary design studio with project galleries, team profiles, and collaboration portal.",
+    "icon": "PenTool",
+    "category": "Creative"
+  },
+  {
+    "name": "GreenSpace Architecture",
+    "repo_name": "greenspace-architecture",
+    "description": "Sustainable architecture firm with project portfolios, 3D visualizations, and consultation booking.",
+    "icon": "Building",
+    "category": "Architecture"
+  },
+  {
+    "name": "Photography Studio Pro",
+    "repo_name": "photography-studio-pro",
+    "description": "Commercial photography services with portfolio galleries, package pricing, and booking calendar.",
+    "icon": "Camera",
+    "category": "Creative"
+  },
+  {
+    "name": "ArtGallery Modern",
+    "repo_name": "artgallery-modern",
+    "description": "Contemporary art gallery with virtual exhibitions, artist profiles, and online art sales.",
+    "icon": "Palette",
+    "category": "Creative"
+  },
+  {
+    "name": "Digital Marketing Agency",
+    "repo_name": "digital-marketing-agency",
+    "description": "Full-service marketing with SEO tools, campaign management, and analytics dashboards.",
+    "icon": "Target",
+    "category": "Marketing"
+  },
+  {
+    "name": "Content Creator Studio",
+    "repo_name": "content-creator-studio",
+    "description": "Content production hub with creator tools, collaboration features, and distribution networks.",
+    "icon": "PlayCircle",
+    "category": "Media"
+  },
+  {
+    "name": "Podcast Production Hub",
+    "repo_name": "podcast-production-hub",
+    "description": "Podcast services with recording studios, editing tools, and distribution management.",
+    "icon": "Mic",
+    "category": "Media"
+  },
+  {
+    "name": "Independent Film Studio",
+    "repo_name": "independent-film-studio",
+    "description": "Film production company with project showcases, crew resources, and investor relations.",
+    "icon": "Film",
+    "category": "Media"
+  },
+  {
+    "name": "Community Radio Station",
+    "repo_name": "community-radio-station",
+    "description": "Local radio station with live streaming, show schedules, and community event listings.",
+    "icon": "Radio",
+    "category": "Media"
+  },
+  {
+    "name": "Local News Network",
+    "repo_name": "local-news-network",
+    "description": "News portal with content management system, subscription management, and multimedia integration.",
+    "icon": "Globe",
+    "category": "Media"
+  },
+  {
+    "name": "Quick Print Solutions",
+    "repo_name": "quick-print-solutions",
+    "description": "Printing services with online ordering, design templates, and rush order options.",
+    "icon": "Paintbrush",
+    "category": "Creative"
+  },
+  {
+    "name": "Urban Hair Studio",
+    "repo_name": "urban-hair-studio",
+    "description": "Hair salon website with stylist portfolios, online booking, and virtual consultation options.",
+    "icon": "Scissors",
+    "category": "Beauty"
+  },
+  {
+    "name": "Glamour Beauty Spa",
+    "repo_name": "glamour-beauty-spa",
+    "description": "Luxury spa website with treatment menus, package deals, and gift certificate purchases.",
+    "icon": "Sparkles",
+    "category": "Beauty"
+  },
+  {
+    "name": "Nail Art Studio",
+    "repo_name": "nail-art-studio",
+    "description": "Nail salon with design galleries, appointment booking, and loyalty program management.",
+    "icon": "Palette",
+    "category": "Beauty"
+  },
+  {
+    "name": "Fresh Cuts Barbershop",
+    "repo_name": "fresh-cuts-barbershop",
+    "description": "Barbershop website with barber profiles, service menu, and walk-in wait time display.",
+    "icon": "Scissors",
+    "category": "Beauty"
+  },
+  {
+    "name": "Local Hair Salon",
+    "repo_name": "local-hair-salon",
+    "description": "Neighborhood salon with stylist booking, service galleries, and product recommendations.",
+    "icon": "Scissors",
+    "category": "Beauty"
+  },
+  {
+    "name": "Luxury Spa Retreat",
+    "repo_name": "luxury-spa-retreat",
+    "description": "Destination spa with accommodation booking, wellness programs, and retreat packages.",
+    "icon": "Sparkles",
+    "category": "Beauty"
+  },
+  {
+    "name": "Peak Performance Gym",
+    "repo_name": "peak-performance-gym",
+    "description": "Fitness center website with class schedules, trainer profiles, and membership management.",
+    "icon": "Dumbbell",
+    "category": "Fitness"
+  },
+  {
+    "name": "UrbanFit Gym Chain",
+    "repo_name": "urbanfit-gym-chain",
+    "description": "Multi-location fitness franchise with membership portal, class booking, and virtual workouts.",
+    "icon": "Dumbbell",
+    "category": "Fitness"
+  },
+  {
+    "name": "Tennis Club Elite",
+    "repo_name": "tennis-club-elite",
+    "description": "Tennis facility with court reservations, lesson bookings, and tournament management.",
+    "icon": "Target",
+    "category": "Sports"
+  },
+  {
+    "name": "Golf Pro Shop",
+    "repo_name": "golf-pro-shop",
+    "description": "Golf course website with tee time booking, pro shop, and membership services.",
+    "icon": "Target",
+    "category": "Sports"
+  },
+  {
+    "name": "Swim School Academy",
+    "repo_name": "swim-school-academy",
+    "description": "Swimming instruction with class schedules, instructor profiles, and progress tracking.",
+    "icon": "Droplets",
+    "category": "Sports"
+  },
+  {
+    "name": "Elite Sports Training",
+    "repo_name": "elite-sports-training",
+    "description": "Athletic training facility with program details, coach profiles, and performance tracking.",
+    "icon": "Award",
+    "category": "Sports"
+  },
+  {
+    "name": "YogaZen Studio",
+    "repo_name": "yogazen-studio",
+    "description": "Yoga studio with class schedules, instructor bios, and workshop registration.",
+    "icon": "Heart",
+    "category": "Fitness"
+  },
+  {
+    "name": "Dance Academy Elite",
+    "repo_name": "dance-academy-elite",
+    "description": "Dance school with class schedules, recital information, and online registration.",
+    "icon": "Music",
+    "category": "Arts"
+  },
+  {
+    "name": "Dance Academy Stars",
+    "repo_name": "dance-academy-stars",
+    "description": "Professional dance training with audition prep, competition teams, and showcase events.",
+    "icon": "Award",
+    "category": "Arts"
+  },
+  {
+    "name": "Mountain Bike Rentals",
+    "repo_name": "mountain-bike-rentals",
+    "description": "Bike rental service with online reservations, trail maps, and guided tour bookings.",
+    "icon": "Bike",
+    "category": "Sports"
+  },
+  {
+    "name": "Outdoor Adventure Gear",
+    "repo_name": "outdoor-adventure-gear",
+    "description": "Adventure sports equipment with gear guides, rental options, and trip planning resources.",
+    "icon": "Mountain",
+    "category": "Sports"
+  },
+  {
+    "name": "Meditation Center Zen",
+    "repo_name": "meditation-center-zen",
+    "description": "Meditation facility with class schedules, retreat programs, and mindfulness resources.",
+    "icon": "Brain",
+    "category": "Wellness"
+  },
+  {
+    "name": "Elite Auto Repair",
+    "repo_name": "elite-auto-repair",
+    "description": "Auto repair shop website with online booking, service tracking, and customer review system.",
+    "icon": "Car",
+    "category": "Automotive"
+  },
+  {
+    "name": "Luxury Car Wash",
+    "repo_name": "luxury-car-wash",
+    "description": "Premium car detailing with package options, membership plans, and online scheduling.",
+    "icon": "Sparkles",
+    "category": "Automotive"
+  },
+  {
+    "name": "Speed Tire Center",
+    "repo_name": "speed-tire-center",
+    "description": "Tire service center with inventory search, installation booking, and warranty tracking.",
+    "icon": "Car",
+    "category": "Automotive"
+  },
+  {
+    "name": "Classic Auto Sales",
+    "repo_name": "classic-auto-sales",
+    "description": "Used car dealership with inventory listings, financing options, and trade-in valuations.",
+    "icon": "Car",
+    "category": "Automotive"
+  },
+  {
+    "name": "Motor Sports Garage",
+    "repo_name": "motor-sports-garage",
+    "description": "Performance auto shop with custom builds, racing services, and parts catalog.",
+    "icon": "Zap",
+    "category": "Automotive"
+  },
+  {
+    "name": "AutoFix Garage",
+    "repo_name": "autofix-garage",
+    "description": "Local auto repair with service booking, maintenance reminders, and loyalty discounts.",
+    "icon": "Wrench",
+    "category": "Automotive"
+  },
+  {
+    "name": "Friendly Auto Shop",
+    "repo_name": "friendly-auto-shop",
+    "description": "Community auto service with transparent pricing, service history, and appointment booking.",
+    "icon": "Tool",
+    "category": "Automotive"
+  },
+  {
+    "name": "Tire Service Center",
+    "repo_name": "tire-service-center",
+    "description": "Tire shop with brand selection, installation scheduling, and road hazard warranties.",
+    "icon": "Car",
+    "category": "Automotive"
+  },
+  {
+    "name": "Luxury Car Detailing",
+    "repo_name": "luxury-car-detailing",
+    "description": "High-end auto detailing with ceramic coating, paint protection, and mobile services.",
+    "icon": "Sparkles",
+    "category": "Automotive"
+  },
+  {
+    "name": "Bicycle Repair Shop",
+    "repo_name": "bicycle-repair-shop",
+    "description": "Bike repair service with tune-up packages, parts catalog, and pickup/delivery options.",
+    "icon": "Bike",
+    "category": "Automotive"
+  },
+  {
+    "name": "Dream Home Builders",
+    "repo_name": "dream-home-builders",
+    "description": "Custom home construction with project galleries, floor plans, and client testimonials.",
+    "icon": "Home",
+    "category": "Construction"
+  },
+  {
+    "name": "Garden Paradise Landscape",
+    "repo_name": "garden-paradise-landscape",
+    "description": "Landscaping services with design portfolios, maintenance plans, and instant quotes.",
+    "icon": "Trees",
+    "category": "Home Services"
+  },
+  {
+    "name": "Reliable Plumbing Pro",
+    "repo_name": "reliable-plumbing-pro",
+    "description": "Plumbing services with emergency booking, service areas, and maintenance plans.",
+    "icon": "Droplets",
+    "category": "Home Services"
+  },
+  {
+    "name": "Power Electric Solutions",
+    "repo_name": "power-electric-solutions",
+    "description": "Electrical contractor with service requests, safety resources, and energy efficiency consultations.",
+    "icon": "Zap",
+    "category": "Home Services"
+  },
+  {
+    "name": "Perfect Paint Pros",
+    "repo_name": "perfect-paint-pros",
+    "description": "Painting contractor with color consultations, project galleries, and online estimates.",
+    "icon": "Paintbrush",
+    "category": "Home Services"
+  },
+  {
+    "name": "Clean Pro Services",
+    "repo_name": "clean-pro-services",
+    "description": "Professional cleaning company with service packages, online booking, and recurring schedules.",
+    "icon": "Sparkles",
+    "category": "Home Services"
+  },
+  {
+    "name": "Custom Furniture Makers",
+    "repo_name": "custom-furniture-makers",
+    "description": "Bespoke furniture design with portfolio galleries, material selection, and quote requests.",
+    "icon": "Hammer",
+    "category": "Manufacturing"
+  },
+  {
+    "name": "Metal Fabrication Works",
+    "repo_name": "metal-fabrication-works",
+    "description": "Custom metalwork with project examples, capabilities showcase, and quote system.",
+    "icon": "Factory",
+    "category": "Manufacturing"
+  },
+  {
+    "name": "Ceramic Pottery Studio",
+    "repo_name": "ceramic-pottery-studio",
+    "description": "Pottery workshop with class schedules, gallery shop, and custom commission requests.",
+    "icon": "Palette",
+    "category": "Arts"
+  },
+  {
+    "name": "Glass Art Creations",
+    "repo_name": "glass-art-creations",
+    "description": "Stained glass studio with commission portfolios, restoration services, and workshop classes.",
+    "icon": "Sparkles",
+    "category": "Arts"
+  },
+  {
+    "name": "Woodworking Craft Shop",
+    "repo_name": "woodworking-craft-shop",
+    "description": "Custom woodwork with project galleries, wood selection guide, and commission inquiries.",
+    "icon": "Trees",
+    "category": "Manufacturing"
+  },
+  {
+    "name": "Solar Energy Solutions",
+    "repo_name": "solar-energy-solutions",
+    "description": "Solar installation company with savings calculator, system designs, and financing options.",
+    "icon": "Sun",
+    "category": "Energy"
+  },
+  {
+    "name": "Water Treatment Systems",
+    "repo_name": "water-treatment-systems",
+    "description": "Water purification services with product catalog, water testing, and maintenance plans.",
+    "icon": "Droplets",
+    "category": "Home Services"
+  },
+  {
+    "name": "Recycling Center Pro",
+    "repo_name": "recycling-center-pro",
+    "description": "Waste management facility with service schedules, accepted materials, and education resources.",
+    "icon": "Leaf",
+    "category": "Environmental"
+  },
+  {
+    "name": "Landscape Supply Co",
+    "repo_name": "landscape-supply-co",
+    "description": "Landscaping materials supplier with product catalog, delivery options, and bulk pricing.",
+    "icon": "Trees",
+    "category": "Home Services"
+  },
+  {
+    "name": "EcoEnergy Solutions",
+    "repo_name": "ecoenergy-solutions",
+    "description": "Renewable energy consulting with efficiency audits, system design, and incentive guidance.",
+    "icon": "Leaf",
+    "category": "Energy"
+  },
+  {
+    "name": "UrbanPlanning Group",
+    "repo_name": "urbanplanning-group",
+    "description": "Urban development firm with project portfolios, community engagement, and planning resources.",
+    "icon": "Building",
+    "category": "Architecture"
+  },
+  {
+    "name": "Home Renovation Pros",
+    "repo_name": "home-renovation-pros",
+    "description": "Remodeling contractor with before/after galleries, design services, and project timelines.",
+    "icon": "Hammer",
+    "category": "Construction"
+  },
+  {
+    "name": "Professional Cleaning Co",
+    "repo_name": "professional-cleaning-co",
+    "description": "Commercial cleaning services with service areas, contract options, and quality guarantees.",
+    "icon": "Sparkles",
+    "category": "Home Services"
+  },
+  {
+    "name": "Carpet Cleaning Pro",
+    "repo_name": "carpet-cleaning-pro",
+    "description": "Carpet and upholstery cleaning with instant quotes, booking system, and satisfaction guarantee.",
+    "icon": "Sparkles",
+    "category": "Home Services"
+  },
+  {
+    "name": "Pool Maintenance Pro",
+    "repo_name": "pool-maintenance-pro",
+    "description": "Pool service company with maintenance plans, repair services, and water chemistry resources.",
+    "icon": "Droplets",
+    "category": "Home Services"
+  },
+  {
+    "name": "Home Security Systems",
+    "repo_name": "home-security-systems",
+    "description": "Security installation with product comparison, monitoring plans, and smart home integration.",
+    "icon": "Shield",
+    "category": "Security"
+  },
+  {
+    "name": "Night Owl Security",
+    "repo_name": "night-owl-security",
+    "description": "Security guard services with patrol options, event security, and instant quote system.",
+    "icon": "Shield",
+    "category": "Security"
+  },
+  {
+    "name": "Security Guard Services",
+    "repo_name": "security-guard-services",
+    "description": "Professional security with armed/unarmed options, risk assessments, and emergency response.",
+    "icon": "Shield",
+    "category": "Security"
+  },
+  {
+    "name": "Locksmith Express",
+    "repo_name": "locksmith-express",
+    "description": "24/7 locksmith service with emergency response, security upgrades, and key duplication.",
+    "icon": "Lock",
+    "category": "Security"
+  },
+  {
+    "name": "Pest Control Experts",
+    "repo_name": "pest-control-experts",
+    "description": "Pest management services with treatment plans, prevention tips, and emergency services.",
+    "icon": "Bug",
+    "category": "Home Services"
+  },
+  {
+    "name": "Urban Farming Co-op",
+    "repo_name": "urban-farming-co-op",
+    "description": "Community farm with CSA memberships, volunteer opportunities, and educational programs.",
+    "icon": "Leaf",
+    "category": "Agriculture"
+  },
+  {
+    "name": "Garden Center Plus",
+    "repo_name": "garden-center-plus",
+    "description": "Garden supply store with plant care guides, landscaping tips, and seasonal workshops.",
+    "icon": "Trees",
+    "category": "Retail"
+  },
+  {
+    "name": "Home Sweet Home Realty",
+    "repo_name": "home-sweet-home-realty",
+    "description": "Real estate agency with property listings, virtual tours, and market analysis tools.",
+    "icon": "Home",
+    "category": "Real Estate"
+  },
+  {
+    "name": "Prime Real Estate",
+    "repo_name": "prime-real-estate",
+    "description": "Real estate platform with property listings, virtual tours, mortgage calculator, and agent portal.",
+    "icon": "Building",
+    "category": "Real Estate"
+  },
+  {
+    "name": "Property Management Plus",
+    "repo_name": "property-management-plus",
+    "description": "Property management with tenant portals, maintenance requests, and owner dashboards.",
+    "icon": "Building",
+    "category": "Real Estate"
+  },
+  {
+    "name": "Professional Dry Cleaning",
+    "repo_name": "professional-dry-cleaning",
+    "description": "Dry cleaning service with pickup/delivery, rush options, and garment care tips.",
+    "icon": "Sparkles",
+    "category": "Services"
+  },
+  {
+    "name": "Quick Wash Laundromat",
+    "repo_name": "quick-wash-laundromat",
+    "description": "Self-service laundry with machine availability, wash-and-fold service, and loyalty program.",
+    "icon": "Droplets",
+    "category": "Services"
+  },
+  {
+    "name": "Storage Solutions Plus",
+    "repo_name": "storage-solutions-plus",
+    "description": "Self-storage facility with unit sizes, online rental, and payment management.",
+    "icon": "Package",
+    "category": "Services"
+  },
+  {
+    "name": "Equipment Rental Pro",
+    "repo_name": "equipment-rental-pro",
+    "description": "Tool and equipment rental with availability calendar, delivery options, and contractor accounts.",
+    "icon": "Tool",
+    "category": "Services"
+  },
+  {
+    "name": "Star Event Planning",
+    "repo_name": "star-event-planning",
+    "description": "Event planning services with portfolio galleries, vendor networks, and consultation booking.",
+    "icon": "Calendar",
+    "category": "Events"
+  },
+  {
+    "name": "Party Rental Express",
+    "repo_name": "party-rental-express",
+    "description": "Party equipment rental with inventory catalog, package deals, and delivery scheduling.",
+    "icon": "Package",
+    "category": "Events"
+  },
+  {
+    "name": "Wedding Planning Dreams",
+    "repo_name": "wedding-planning-dreams",
+    "description": "Wedding planning service with inspiration galleries, vendor directory, and budget tools.",
+    "icon": "Heart",
+    "category": "Events"
+  },
+  {
+    "name": "EventMaster Planning",
+    "repo_name": "eventmaster-planning",
+    "description": "Event management platform with vendor directory, budget tracking, and guest management system.",
+    "icon": "Calendar",
+    "category": "Events"
+  },
+  {
+    "name": "Wedding Planners Elite",
+    "repo_name": "wedding-planners-elite",
+    "description": "Luxury wedding planning with design portfolios, vendor partnerships, and day-of coordination.",
+    "icon": "Heart",
+    "category": "Events"
+  },
+  {
+    "name": "Gaming Zone Arcade",
+    "repo_name": "gaming-zone-arcade",
+    "description": "Gaming arcade with party packages, tournament schedules, and membership programs.",
+    "icon": "Gamepad",
+    "category": "Entertainment"
+  },
+  {
+    "name": "Retro Gaming Arcade",
+    "repo_name": "retro-gaming-arcade",
+    "description": "Vintage arcade with game library, event hosting, and restoration services.",
+    "icon": "Gamepad",
+    "category": "Entertainment"
+  },
+  {
+    "name": "Family Fun Bowling",
+    "repo_name": "family-fun-bowling",
+    "description": "Bowling alley with lane reservations, league information, and party packages.",
+    "icon": "Target",
+    "category": "Entertainment"
+  },
+  {
+    "name": "Kids Zone Playground",
+    "repo_name": "kids-zone-playground",
+    "description": "Indoor playground with party hosting, membership options, and parent amenities.",
+    "icon": "Baby",
+    "category": "Entertainment"
+  },
+  {
+    "name": "Bright Minds Tutoring",
+    "repo_name": "bright-minds-tutoring",
+    "description": "Tutoring center with subject specialists, online sessions, and progress tracking.",
+    "icon": "GraduationCap",
+    "category": "Education"
+  },
+  {
+    "name": "Language Learning Center",
+    "repo_name": "language-learning-center",
+    "description": "Language school with course offerings, placement tests, and cultural immersion programs.",
+    "icon": "Globe",
+    "category": "Education"
+  },
+  {
+    "name": "Computer Skills Academy",
+    "repo_name": "computer-skills-academy",
+    "description": "IT training center with certification courses, lab access, and career placement services.",
+    "icon": "Laptop",
+    "category": "Education"
+  },
+  {
+    "name": "Art Classes Studio",
+    "repo_name": "art-classes-studio",
+    "description": "Art education center with class schedules, supply lists, and student gallery exhibitions.",
+    "icon": "Palette",
+    "category": "Education"
+  },
+  {
+    "name": "Music Theory School",
+    "repo_name": "music-theory-school",
+    "description": "Music education with theory courses, ear training, and composition workshops.",
+    "icon": "Music",
+    "category": "Education"
+  },
+  {
+    "name": "Music Lessons Studio",
+    "repo_name": "music-lessons-studio",
+    "description": "Private music instruction with teacher profiles, recital schedules, and online lessons.",
+    "icon": "Music",
+    "category": "Education"
+  },
+  {
+    "name": "MusicLessons Academy",
+    "repo_name": "musiclessons-academy",
+    "description": "Comprehensive music school with instrument rentals, theory classes, and performance opportunities.",
+    "icon": "Headphones",
+    "category": "Education"
+  },
+  {
+    "name": "Craft Workshop Studio",
+    "repo_name": "craft-workshop-studio",
+    "description": "DIY craft classes with project tutorials, supply kits, and community gallery.",
+    "icon": "Palette",
+    "category": "Education"
+  },
+  {
+    "name": "Tutoring Center Plus",
+    "repo_name": "tutoring-center-plus",
+    "description": "Academic support center with test prep, homework help, and college counseling.",
+    "icon": "School",
+    "category": "Education"
+  },
+  {
+    "name": "City Taxi Service",
+    "repo_name": "city-taxi-service",
+    "description": "Taxi company with app booking, fare estimates, and corporate accounts.",
+    "icon": "Car",
+    "category": "Transportation"
+  },
+  {
+    "name": "Luxury Limo Rentals",
+    "repo_name": "luxury-limo-rentals",
+    "description": "Limousine service with fleet showcase, instant quotes, and special event packages.",
+    "icon": "Car",
+    "category": "Transportation"
+  },
+  {
+    "name": "Moving Company Pro",
+    "repo_name": "moving-company-pro",
+    "description": "Moving services with instant estimates, packing supplies, and shipment tracking.",
+    "icon": "Truck",
+    "category": "Logistics"
+  },
+  {
+    "name": "Delivery Express",
+    "repo_name": "delivery-express",
+    "description": "Local delivery service with real-time tracking, route optimization, and bulk shipping.",
+    "icon": "Package",
+    "category": "Logistics"
+  },
+  {
+    "name": "Airport Shuttle Plus",
+    "repo_name": "airport-shuttle-plus",
+    "description": "Airport transportation with flight tracking, group bookings, and loyalty discounts.",
+    "icon": "Plane",
+    "category": "Transportation"
+  },
+  {
+    "name": "City Bus Tours",
+    "repo_name": "city-bus-tours",
+    "description": "Sightseeing tours with route information, multilingual guides, and combo packages.",
+    "icon": "Bus",
+    "category": "Tourism"
+  },
+  {
+    "name": "Adventure Tours Guide",
+    "repo_name": "adventure-tours-guide",
+    "description": "Adventure travel company with trip itineraries, booking system, and travel insurance options.",
+    "icon": "Mountain",
+    "category": "Tourism"
+  },
+  {
+    "name": "TravelGuide Agency",
+    "repo_name": "travelguide-agency",
+    "description": "Travel agency with destination guides, package deals, and personalized trip planning.",
+    "icon": "Plane",
+    "category": "Tourism"
+  },
+  {
+    "name": "Mountain Hiking Tours",
+    "repo_name": "mountain-hiking-tours",
+    "description": "Guided hiking service with trail difficulty ratings, gear lists, and group bookings.",
+    "icon": "Mountain",
+    "category": "Tourism"
+  },
+  {
+    "name": "Cozy Bed and Breakfast",
+    "repo_name": "cozy-bed-and-breakfast",
+    "description": "B&B accommodation with room galleries, local attraction guides, and package deals.",
+    "icon": "BedDouble",
+    "category": "Hospitality"
+  },
+  {
+    "name": "Sunny Day Daycare",
+    "repo_name": "sunny-day-daycare",
+    "description": "Childcare center with enrollment information, curriculum details, and parent communication portal.",
+    "icon": "Baby",
+    "category": "Childcare"
+  },
+  {
+    "name": "Dog Training Academy",
+    "repo_name": "dog-training-academy",
+    "description": "Professional dog training with class schedules, training videos, and behavior resources.",
+    "icon": "PawPrint",
+    "category": "Pet Services"
+  },
+  {
+    "name": "Pet Grooming Salon",
+    "repo_name": "pet-grooming-salon",
+    "description": "Pet grooming services with appointment booking, service packages, and photo galleries.",
+    "icon": "PawPrint",
+    "category": "Pet Services"
+  },
+  {
+    "name": "Animal Boarding Hotel",
+    "repo_name": "animal-boarding-hotel",
+    "description": "Pet boarding facility with virtual tours, webcam access, and reservation system.",
+    "icon": "PawPrint",
+    "category": "Pet Services"
+  },
+  {
+    "name": "Senior Care Services",
+    "repo_name": "senior-care-services",
+    "description": "Elder care services with care plans, family resources, and caregiver matching.",
+    "icon": "Heart",
+    "category": "Healthcare"
+  },
+  {
+    "name": "Childcare Learning Center",
+    "repo_name": "childcare-learning-center",
+    "description": "Early education center with curriculum information, enrollment forms, and parent resources.",
+    "icon": "School",
+    "category": "Childcare"
+  },
+  {
+    "name": "Subscription Box Service",
+    "repo_name": "subscription-box-service",
+    "description": "Curated subscription boxes with customization options, gift subscriptions, and member perks.",
+    "icon": "Package",
+    "category": "E-commerce"
+  },
+  {
+    "name": "Bloom Flower Boutique",
+    "repo_name": "bloom-flower-boutique",
+    "description": "Florist shop with arrangement galleries, delivery options, and event services.",
+    "icon": "Flower2",
+    "category": "Retail"
+  },
+  {
+    "name": "Flower Power Florist",
+    "repo_name": "flower-power-florist",
+    "description": "Flower shop with seasonal arrangements, wedding services, and same-day delivery.",
+    "icon": "Flower2",
+    "category": "Retail"
+  },
+  {
+    "name": "Dog Walking Service",
+    "repo_name": "dog-walking-service",
+    "description": "Professional dog walking with GPS tracking, photo updates, and flexible scheduling.",
+    "icon": "PawPrint",
+    "category": "Pet Services"
+  },
+  {
+    "name": "Happy Tails Grooming",
+    "repo_name": "happy-tails-grooming",
+    "description": "Mobile pet grooming with online booking, service areas, and loyalty rewards.",
+    "icon": "PawPrint",
+    "category": "Pet Services"
+  },
+  {
+    "name": "Helping Hands Charity",
+    "repo_name": "helping-hands-charity",
+    "description": "Non-profit organization with donation portal, volunteer signup, and impact reports.",
+    "icon": "HandHeart",
+    "category": "Non-Profit"
+  },
+  {
+    "name": "Community Center Hub",
+    "repo_name": "community-center-hub",
+    "description": "Community facility with program schedules, room rentals, and event calendars.",
+    "icon": "Users",
+    "category": "Community"
+  },
+  {
+    "name": "LED Blink",
+    "repo_name": "led-blink",
+    "description": "Fundamental Arduino project controlling LED states with precise timing and PWM modulation.",
+    "icon": "Lightbulb",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Button Controlled LED",
+    "repo_name": "button-controlled-led",
+    "description": "Interactive circuit with debouncing algorithms and state management for reliable input handling.",
+    "icon": "CircuitBoard",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Traffic Light Simulator",
+    "repo_name": "traffic-light-simulator",
+    "description": "Automated traffic control system with timing algorithms and pedestrian crossing integration.",
+    "icon": "Zap",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Buzzer Alarm",
+    "repo_name": "buzzer-alarm",
+    "description": "Sound generation system with frequency modulation and pattern programming capabilities.",
+    "icon": "Radio",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Light Sensor Reader",
+    "repo_name": "light-sensor-reader",
+    "description": "Photoresistor-based ambient light detection with ADC calibration and threshold triggering.",
+    "icon": "Sun",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Temperature Monitor",
+    "repo_name": "temperature-monitor",
+    "description": "Digital temperature sensing with data logging, alerts, and trend analysis features.",
+    "icon": "Thermometer",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "RGB LED Color Mixer",
+    "repo_name": "rgb-led-color-mixer",
+    "description": "Color theory implementation with PWM control for smooth color transitions and effects.",
+    "icon": "Palette",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Simple Servo Control",
+    "repo_name": "simple-servo-control",
+    "description": "Precision motor control with angle positioning and sweep pattern programming.",
+    "icon": "Cog",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Potentiometer Servo",
+    "repo_name": "potentiometer-servo",
+    "description": "Analog input mapping to servo position with smoothing algorithms and dead zone handling.",
+    "icon": "Gauge",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Digital Dice",
+    "repo_name": "digital-dice",
+    "description": "Random number generator with LED display matrix and rolling animation effects.",
+    "icon": "Gamepad",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Motion Detector",
+    "repo_name": "motion-detector",
+    "description": "PIR sensor integration with alert system and configurable sensitivity settings.",
+    "icon": "Radar",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Simple Robot Movement",
+    "repo_name": "simple-robot-movement",
+    "description": "Basic locomotion control with forward, reverse, and turning capabilities using DC motors.",
+    "icon": "Bot",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Distance Meter",
+    "repo_name": "distance-meter",
+    "description": "Ultrasonic ranging system with LCD display and metric/imperial unit conversion.",
+    "icon": "Crosshair",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Light Following Robot",
+    "repo_name": "light-following-robot",
+    "description": "Phototropic behavior using dual LDR sensors with differential drive control.",
+    "icon": "Sun",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Remote Control Car",
+    "repo_name": "remote-control-car",
+    "description": "IR or RF controlled vehicle with speed regulation and directional control.",
+    "icon": "Joystick",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Simple Line Follower",
+    "repo_name": "simple-line-follower",
+    "description": "Infrared sensor array for path tracking with PID control implementation.",
+    "icon": "Navigation",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Obstacle Detector",
+    "repo_name": "obstacle-detector",
+    "description": "Collision avoidance system using ultrasonic sensors with emergency stop functionality.",
+    "icon": "Shield",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Pet Feeder Timer",
+    "repo_name": "pet-feeder-timer",
+    "description": "Automated feeding mechanism with scheduling, portion control, and low-food alerts.",
+    "icon": "Timer",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Plant Watering System",
+    "repo_name": "plant-watering-system",
+    "description": "Moisture-based irrigation control with pump management and water level monitoring.",
+    "icon": "Droplets",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Smart Door Lock",
+    "repo_name": "smart-door-lock",
+    "description": "Keypad or RFID access control with logging and temporary access code generation.",
+    "icon": "Lock",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Voice Controlled LED",
+    "repo_name": "voice-controlled-led",
+    "description": "Speech recognition module integration for hands-free lighting control.",
+    "icon": "Mic",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Bluetooth Robot",
+    "repo_name": "bluetooth-robot",
+    "description": "Smartphone-controlled robot with custom app interface and real-time communication.",
+    "icon": "Smartphone",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Weather Station",
+    "repo_name": "weather-station",
+    "description": "Multi-sensor environmental monitoring with data logging and trend visualization.",
+    "icon": "Cloud",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Simple Robotic Arm",
+    "repo_name": "simple-robotic-arm",
+    "description": "3-DOF manipulator with inverse kinematics and gripper control for pick-and-place tasks.",
+    "icon": "Bot",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Maze Solver Basic",
+    "repo_name": "maze-solver-basic",
+    "description": "Wall-following algorithm implementation with dead-end detection and path memory.",
+    "icon": "Compass",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Smart Parking System",
+    "repo_name": "smart-parking-system",
+    "description": "Ultrasonic-based parking space detection with LED indicators and occupancy tracking.",
+    "icon": "Car",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Home Security System",
+    "repo_name": "home-security-system",
+    "description": "Multi-sensor intrusion detection with alarm triggering and notification system.",
+    "icon": "Shield",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Robot Pet",
+    "repo_name": "robot-pet",
+    "description": "Interactive companion with touch sensors, sound responses, and behavioral patterns.",
+    "icon": "PawPrint",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Smart Garden Monitor",
+    "repo_name": "smart-garden-monitor",
+    "description": "IoT-enabled plant health tracking with automated care recommendations.",
+    "icon": "Leaf",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Basic Computer Vision",
+    "repo_name": "basic-computer-vision",
+    "description": "OpenCV integration for color detection, object tracking, and simple image processing.",
+    "icon": "Eye",
+    "category": "Robotics - Beginner"
+  },
+  {
+    "name": "Advanced Line Follower",
+    "repo_name": "advanced-line-follower",
+    "description": "High-speed line tracking with PID tuning, intersection handling, and path optimization.",
+    "icon": "Navigation",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Obstacle Avoidance Robot",
+    "repo_name": "obstacle-avoidance-robot",
+    "description": "Multi-sensor fusion for dynamic obstacle navigation with path planning algorithms.",
+    "icon": "Radar",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Balancing Robot",
+    "repo_name": "balancing-robot",
+    "description": "Self-balancing two-wheeled robot using IMU data and complementary filter algorithms.",
+    "icon": "Gauge",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Voice Controlled Assistant",
+    "repo_name": "voice-controlled-assistant",
+    "description": "Natural language processing robot with command interpretation and task execution.",
+    "icon": "Mic2",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Facial Recognition Door",
+    "repo_name": "facial-recognition-door",
+    "description": "Computer vision-based access control with face detection and recognition algorithms.",
+    "icon": "ScanFace",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Gesture Controlled Robot",
+    "repo_name": "gesture-controlled-robot",
+    "description": "Hand gesture recognition using accelerometer or computer vision for intuitive control.",
+    "icon": "Move3d",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Multi Robot Communication",
+    "repo_name": "multi-robot-communication",
+    "description": "Swarm behavior implementation with mesh networking and collaborative task execution.",
+    "icon": "Wifi",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Solar Tracking System",
+    "repo_name": "solar-tracking-system",
+    "description": "Dual-axis solar panel positioning with light intensity optimization algorithms.",
+    "icon": "Sun",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Vacuum",
+    "repo_name": "robotic-vacuum",
+    "description": "Autonomous floor cleaning robot with room mapping and efficient coverage algorithms.",
+    "icon": "Bot",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Pick and Place Robot",
+    "repo_name": "pick-and-place-robot",
+    "description": "Industrial-style manipulator with computer vision for object sorting and placement.",
+    "icon": "Bot",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Drone Flight Controller",
+    "repo_name": "drone-flight-controller",
+    "description": "Quadcopter stabilization with GPS navigation and autonomous flight capabilities.",
+    "icon": "Navigation",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robot Swarm Simulation",
+    "repo_name": "robot-swarm-simulation",
+    "description": "Multi-agent system with emergent behaviors and distributed decision making.",
+    "icon": "Cpu",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Home Hub",
+    "repo_name": "smart-home-hub",
+    "description": "Central automation system integrating multiple IoT devices with voice control.",
+    "icon": "Home",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Object Tracking Camera",
+    "repo_name": "object-tracking-camera",
+    "description": "Pan-tilt camera system with real-time object detection and smooth tracking.",
+    "icon": "Camera",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Chess Player",
+    "repo_name": "robotic-chess-player",
+    "description": "Computer vision chess board recognition with strategic AI and physical piece movement.",
+    "icon": "Brain",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Autonomous Lawnmower",
+    "repo_name": "autonomous-lawnmower",
+    "description": "GPS-guided grass cutting robot with boundary detection and pattern optimization.",
+    "icon": "Bot",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robot Bartender",
+    "repo_name": "robot-bartender",
+    "description": "Automated drink mixing system with recipe database and custom cocktail creation.",
+    "icon": "Coffee",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Prosthetic Hand",
+    "repo_name": "smart-prosthetic-hand",
+    "description": "EMG-controlled prosthetic with adaptive grip patterns and force feedback.",
+    "icon": "Bot",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Warehouse Robot",
+    "repo_name": "warehouse-robot",
+    "description": "Autonomous navigation system for inventory management with RFID tracking.",
+    "icon": "Package",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robot Soccer Player",
+    "repo_name": "robot-soccer-player",
+    "description": "Vision-based ball tracking with team coordination and strategic positioning.",
+    "icon": "Target",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Biped Walking Robot",
+    "repo_name": "biped-walking-robot",
+    "description": "Humanoid locomotion with dynamic balance and gait pattern generation.",
+    "icon": "Bot",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Emotion Recognition Robot",
+    "repo_name": "emotion-recognition-robot",
+    "description": "Facial expression analysis with appropriate emotional response generation.",
+    "icon": "Heart",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic 3D Printer",
+    "repo_name": "robotic-3d-printer",
+    "description": "Custom CNC system with G-code interpretation and precision layer control.",
+    "icon": "Factory",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Mailbox",
+    "repo_name": "smart-mailbox",
+    "description": "Package detection system with theft prevention and delivery notifications.",
+    "icon": "Mail",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robot Tour Guide",
+    "repo_name": "robot-tour-guide",
+    "description": "Autonomous navigation with speech synthesis and interactive information delivery.",
+    "icon": "Users",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Automated Greenhouse",
+    "repo_name": "automated-greenhouse",
+    "description": "Climate control system with plant health monitoring and adaptive care algorithms.",
+    "icon": "Leaf",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Fish Tank Cleaner",
+    "repo_name": "robotic-fish-tank-cleaner",
+    "description": "Underwater maintenance robot with algae detection and glass cleaning mechanisms.",
+    "icon": "Fish",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Sign Language Translator",
+    "repo_name": "sign-language-translator",
+    "description": "Computer vision hand tracking with real-time gesture to text conversion.",
+    "icon": "Move3d",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Window Cleaner",
+    "repo_name": "robotic-window-cleaner",
+    "description": "Vertical surface navigation robot with cleaning pattern optimization.",
+    "icon": "Sparkles",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Traffic System",
+    "repo_name": "smart-traffic-system",
+    "description": "Adaptive traffic light control with vehicle detection and flow optimization.",
+    "icon": "Car",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Pharmacy Dispenser",
+    "repo_name": "robotic-pharmacy-dispenser",
+    "description": "Automated medication dispensing with prescription verification and inventory tracking.",
+    "icon": "Pill",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Autonomous Security Patrol",
+    "repo_name": "autonomous-security-patrol",
+    "description": "Mobile surveillance robot with anomaly detection and alert system integration.",
+    "icon": "Shield",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robot Artist",
+    "repo_name": "robot-artist",
+    "description": "Creative drawing robot with style transfer and original artwork generation.",
+    "icon": "Palette",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Waste Sorter",
+    "repo_name": "smart-waste-sorter",
+    "description": "Computer vision waste classification with automated recycling separation.",
+    "icon": "Leaf",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Pool Cleaner",
+    "repo_name": "robotic-pool-cleaner",
+    "description": "Underwater navigation robot with debris detection and filtration system.",
+    "icon": "Waves",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Voice Controlled Wheelchair",
+    "repo_name": "voice-controlled-wheelchair",
+    "description": "Assistive mobility device with speech commands and obstacle avoidance.",
+    "icon": "Heart",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Library Assistant",
+    "repo_name": "robotic-library-assistant",
+    "description": "Book retrieval system with RFID tracking and automated shelf management.",
+    "icon": "Book",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Smart Irrigation Robot",
+    "repo_name": "smart-irrigation-robot",
+    "description": "Precision agriculture robot with soil analysis and targeted water delivery.",
+    "icon": "Droplets",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Robotic Food Prep Assistant",
+    "repo_name": "robotic-food-prep-assistant",
+    "description": "Kitchen automation system with ingredient recognition and recipe execution.",
+    "icon": "ChefHat",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Personal Training Robot",
+    "repo_name": "personal-training-robot",
+    "description": "Exercise form analysis with real-time feedback and workout tracking.",
+    "icon": "Dumbbell",
+    "category": "Robotics - Intermediate"
+  },
+  {
+    "name": "Autonomous Delivery Drone",
+    "repo_name": "autonomous-delivery-drone",
+    "description": "Full-stack delivery system with route optimization, package handling, and regulatory compliance.",
+    "icon": "Plane",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Humanoid Robot with AI",
+    "repo_name": "humanoid-robot-with-ai",
+    "description": "Advanced bipedal robot with natural language processing and human-robot interaction.",
+    "icon": "Bot",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Self Driving Car Prototype",
+    "repo_name": "self-driving-car-prototype",
+    "description": "Level 4 autonomous vehicle with sensor fusion, path planning, and safety systems.",
+    "icon": "Car",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Industrial Robotic Arm",
+    "repo_name": "industrial-robotic-arm",
+    "description": "6-DOF manipulator with force feedback, precision control, and collaborative safety.",
+    "icon": "Factory",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Surgical Robot Assistant",
+    "repo_name": "surgical-robot-assistant",
+    "description": "Precision medical robot with haptic feedback and tremor elimination.",
+    "icon": "Stethoscope",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Mars Rover Simulation",
+    "repo_name": "mars-rover-simulation",
+    "description": "Planetary exploration robot with autonomous navigation and scientific instrumentation.",
+    "icon": "Rocket",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Swarm Intelligence System",
+    "repo_name": "swarm-intelligence-system",
+    "description": "Distributed robotic system with emergent collective behaviors and task allocation.",
+    "icon": "Cpu",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "AI Powered Personal Assistant",
+    "repo_name": "ai-powered-personal-assistant",
+    "description": "Context-aware robot with deep learning, personalization, and proactive assistance.",
+    "icon": "Brain",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Construction Worker",
+    "repo_name": "robotic-construction-worker",
+    "description": "Automated building system with 3D printing, assembly, and quality inspection.",
+    "icon": "HardHat",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Ocean Exploration Robot",
+    "repo_name": "ocean-exploration-robot",
+    "description": "Deep-sea autonomous vehicle with pressure resistance and marine research capabilities.",
+    "icon": "Waves",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Quantum Enhanced Robot Brain",
+    "repo_name": "quantum-enhanced-robot-brain",
+    "description": "Quantum computing integration for complex decision making and optimization.",
+    "icon": "Cpu",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Neural Interface Robot",
+    "repo_name": "neural-interface-robot",
+    "description": "Brain-computer interface for direct thought control of robotic systems.",
+    "icon": "Brain",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Molecular Assembler Robot",
+    "repo_name": "molecular-assembler-robot",
+    "description": "Nano-scale manipulation system for molecular manufacturing and assembly.",
+    "icon": "CircuitBoard",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "AI Teacher Robot",
+    "repo_name": "ai-teacher-robot",
+    "description": "Adaptive educational robot with personalized curriculum and learning assessment.",
+    "icon": "GraduationCap",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Comedian",
+    "repo_name": "robotic-comedian",
+    "description": "Entertainment robot with humor generation, timing, and audience interaction.",
+    "icon": "Mic",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Disaster Response Robot",
+    "repo_name": "disaster-response-robot",
+    "description": "Search and rescue system with terrain adaptation and survivor detection.",
+    "icon": "Shield",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Therapist",
+    "repo_name": "robotic-therapist",
+    "description": "Mental health support robot with emotional intelligence and therapeutic interventions.",
+    "icon": "Heart",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Space Station Maintenance Robot",
+    "repo_name": "space-station-maintenance-robot",
+    "description": "Zero-gravity operation robot for EVA tasks and station repairs.",
+    "icon": "Rocket",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Scientist",
+    "repo_name": "robotic-scientist",
+    "description": "Automated research system with hypothesis generation and experiment execution.",
+    "icon": "CircuitBoard",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Telepresence Robot Avatar",
+    "repo_name": "telepresence-robot-avatar",
+    "description": "Remote presence system with haptic feedback and immersive control.",
+    "icon": "Users",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Ecosystem Manager",
+    "repo_name": "robotic-ecosystem-manager",
+    "description": "Environmental monitoring and intervention system for ecosystem preservation.",
+    "icon": "Trees",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "AI Judge Robot",
+    "repo_name": "ai-judge-robot",
+    "description": "Legal analysis system with case precedent evaluation and decision support.",
+    "icon": "FileText",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Architect",
+    "repo_name": "robotic-architect",
+    "description": "Generative design system with structural analysis and creative optimization.",
+    "icon": "Building",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Time Traveling Robot",
+    "repo_name": "time-traveling-robot",
+    "description": "Theoretical temporal navigation system with paradox prevention algorithms.",
+    "icon": "Timer",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robotic Life Coach",
+    "repo_name": "robotic-life-coach",
+    "description": "Personal development robot with goal tracking and motivational strategies.",
+    "icon": "Award",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Multi Dimensional Robot",
+    "repo_name": "multi-dimensional-robot",
+    "description": "Theoretical system for operation across multiple spatial dimensions.",
+    "icon": "Move3d",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Consciousness Upload Robot",
+    "repo_name": "consciousness-upload-robot",
+    "description": "Experimental system for digital consciousness transfer and embodiment.",
+    "icon": "Brain",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Universal Translator Robot",
+    "repo_name": "universal-translator-robot",
+    "description": "Real-time multi-modal translation system with cultural context awareness.",
+    "icon": "Globe",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Robot God",
+    "repo_name": "robot-god",
+    "description": "Theoretical omniscient AI system with universal problem-solving capabilities.",
+    "icon": "Rocket",
+    "category": "Robotics - Advanced"
+  },
+  {
+    "name": "Self Replicating Robot",
+    "repo_name": "self-replicating-robot",
+    "description": "Von Neumann probe concept with autonomous reproduction and evolution.",
+    "icon": "Bot",
+    "category": "Robotics - Advanced"
+  }
+]
