@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Jason Cardinal</title>
         <meta
           name="description"
-          content="I’m Jason Cardinal. I live in Saskatchewan, where I design the future."
+          content="Consultant based in Saskatchewan focused on software, data, web, automation, and robotics."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,21 +61,20 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Jason Cardinal. I live in Saskatchewan, where I design the
-              future.
+              I’m Jason Cardinal, a consultant helping teams deliver practical technology.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I believe that people are at the heart of everythign we do. I am dedicated to empowering people by listening to them and understanding their needs, then providing them with the tools they need to succeed.
+                I believe technology should be useful, understandable, and respectful of real-world constraints. My work starts by listening, clarifying outcomes, and designing a path that balances speed with maintainability.
               </p>
               <p>
-                I have a background in finance and technology, and I am currently working on a project to help people learn about the stock market. I recently graduated from the University of Saskatchewan with a Bachelor of Science degree, and I am currently working on Automation & Digital Agriculture.
+                My background spans software and data, automation and digital agriculture, and early robotics prototyping. I bring a hands-on, delivery-focused approach to each engagement, whether that’s a lightweight API, a data pipeline, or an automation that removes hours of manual work.
               </p>
               <p>
-                I spent enjoy spending time with my family, playing video games, and learning about new technologies. I also enjoy wakeboarding, snowboarding, and playing the guitar. I also have a passion for robotics, artificial intelligence, and I am drone pilot with a sRPAS VLOS certificate.
+                Outside of work, I enjoy time with family, learning new tools and techniques, and staying active. I’m also a certified sRPAS VLOS drone pilot with a strong interest in sensing, autonomy, and field robotics.
               </p>
               <p>
-                Today, I’m the Community Navigator for Flying Dust First Nation and the founder of Cardinal Trading Co. & Emberstone Fusion Kitchen, where we are working on finding ways to help people enter the e-commerce space.
+                Today, I serve as Community Navigator for Flying Dust First Nation and lead Cardinal Trading Co., where I partner with organizations to build practical solutions that compound over time.
               </p>
             </div>
           </div>

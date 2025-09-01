@@ -150,7 +150,7 @@ function Resume() {
     },
     {
       company: 'Emberstone Fusion Kitchen',
-      title: 'Chief Excutive Officer',
+      title: 'Chief Executive Officer',
       logo: logoAirbnb,
       start: '2020',
       end: 'Present',
@@ -170,7 +170,7 @@ function Resume() {
       end: '2018',
     },
     {
-      company: 'NorSask Foresty Products',
+      company: 'NorSask Forestry Products',
       title: 'Industrial Millwright',
       logo: logoStarbucks,
       start: '2013',
@@ -258,21 +258,27 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur
+          Jason Cardinal — Consulting in Software, Data, Web, Automation, Robotics
         </title>
         <meta
           name="description"
-          content="I’m Jason Cardinal - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co., where we develop technologies that empower regular people to explore the digital space on their own terms."
+          content="Consultant helping teams ship software, build data products, launch modern web apps, automate workflows, and prototype robotics systems. Based in Meadow Lake, SK."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Data Scientist, Automation & Digital Specialist, and amateur Software Engineer.
+            Consultant for software, data, web, automation, and robotics.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I am Jason Cardinal from Bigstone Cree Nation - Data Scientist, Automation & Digital Agriculture Specialist, and Entrepeneur based in Meadow Lake, Saskatchewan. I’m the founder and CEO of Cardinal Trading Co. & Emberstone Fusion Kitchen, where we develop technologies that empower regular people to explore the digital space on their own terms.
+            I’m Jason Cardinal from Bigstone Cree Nation. I help organizations design and deliver practical technology—from production software and data workflows to modern websites, process automation, and early-stage robotics. I’m the founder of Cardinal Trading Co., based in Meadow Lake, Saskatchewan.
           </p>
+          <div className="mt-6 flex gap-4">
+            <Button href="/services">View services</Button>
+            <Button href="mailto:j@cardinaltrading.co" variant="secondary">
+              Contact
+            </Button>
+          </div>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
@@ -306,7 +312,20 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+              <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Work with me
+              </h2>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                Available for consulting in software development, data science & AI, web development, process automation, and robotics prototypes.
+              </p>
+              <div className="mt-4 flex gap-3">
+                <Button href="/services">Explore services</Button>
+                <Button href="mailto:j@cardinaltrading.co" variant="secondary">
+                  Email me
+                </Button>
+              </div>
+            </div>
             <Resume />
           </div>
         </div>
