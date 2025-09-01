@@ -4,6 +4,23 @@ module.exports = {
   darkMode: 'class',
   plugins: [require('@tailwindcss/typography')],
   theme: {
+    extend: {
+      colors: {
+        cardinal: {
+          DEFAULT: '#a6191b',
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#a6191b',
+          600: '#951517',
+          700: '#7f1214',
+          800: '#6a0f11',
+          900: '#450a0a',
+        },
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],

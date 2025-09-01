@@ -5,7 +5,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import ctcLogo from '@/images/logos/CTC_LOGO.svg'
+import ctcLogo from '@/images/logos/CTC_LOGO_1.svg'
 import { Fragment, useEffect, useRef } from 'react'
 
 function CloseIcon(props) {
@@ -146,13 +146,13 @@ function NavItem({ href, children }) {
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
-            ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400'
+            ? 'text-cardinal-500 dark:text-cardinal-400'
+            : 'hover:text-cardinal-500 dark:hover:text-cardinal-400'
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-cardinal-500/0 via-cardinal-500/40 to-cardinal-500/0 dark:from-cardinal-400/0 dark:via-cardinal-400/40 dark:to-cardinal-400/0" />
         )}
       </Link>
     </li>

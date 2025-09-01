@@ -97,7 +97,7 @@ export default function Services() {
           <Button href="mailto:j@cardinaltrading.co">Email me</Button>
           <Link
             href="/projects"
-            className="text-sm font-medium text-teal-600 transition hover:text-teal-500 dark:text-teal-400"
+            className="text-sm font-medium text-cardinal-600 transition hover:text-cardinal-500 dark:text-cardinal-400"
           >
             See selected work →
           </Link>

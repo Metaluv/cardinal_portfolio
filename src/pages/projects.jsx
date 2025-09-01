@@ -152,12 +152,12 @@ export default function Projects() {
                 <Card.Link href={project.link.href}>{project.name}</Card.Link>
               </h2>
               {project.category && (
-                <span className="mt-2 inline-block rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-700 dark:bg-teal-500/10 dark:text-teal-400">
+                <span className="mt-2 inline-block rounded-full bg-cardinal-50 px-3 py-1 text-xs font-semibold text-cardinal-700 dark:bg-cardinal-500/10 dark:text-cardinal-400">
                   {project.category}
                 </span>
               )}
               <Card.Description className="mt-2">{project.description}</Card.Description>
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-cardinal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{project.link.label}</span>
               </p>

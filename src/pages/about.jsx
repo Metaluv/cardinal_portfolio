@@ -10,16 +10,16 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons' // import the social icons from the components folder
-import ctcLogo from '@/images/logos/CTC_LOGO.svg' // import the business logo from the images folder
+import ctcLogo from '@/images/logos/CTC_LOGO_1.svg' // import the business logo from the images folder
 
 function SocialLink({ className, href, children, icon: Icon }) { // create a social link component that takes in a class name, href, children, and icon as props
   return ( // return the following jsx code to the page when the component is called in the page 
     <li className={clsx(className, 'flex')}>       {/** use the clsx module to conditionally add the class name to the li element if it is passed in as a prop*/}
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-cardinal-500 dark:text-zinc-200 dark:hover:text-cardinal-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-cardinal-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
