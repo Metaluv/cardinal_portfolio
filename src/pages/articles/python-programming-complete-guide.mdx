@@ -1,0 +1,274 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Jason Cardinal',
+  date: '2025-01-04',
+  title: 'Python Programming: A Complete Learning Path for Engineers',
+  description:
+    'From beginner to advanced Python programming with a focus on engineering applications and real-world projects.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+## Your Journey into Python Programming
+
+Python has become the lingua franca of engineering, data science, and automation. As someone balancing work, studies, and community projects, I've designed this learning path to be practical, efficient, and immediately applicable to real-world problems.
+
+## Why Python for Engineers?
+
+Python offers unique advantages for engineering applications:
+- **Rapid prototyping** - Test ideas quickly
+- **Scientific computing** - NumPy, SciPy, Pandas ecosystem
+- **Automation** - Script repetitive tasks
+- **Data analysis** - Process and visualize complex data
+- **Machine learning** - Accessible AI/ML frameworks
+- **Cross-platform** - Works everywhere
+
+## The Three-Phase Learning Journey
+
+### Phase 1: Foundation (Weeks 1-8)
+
+**Goal:** Build solid programming fundamentals
+
+#### Module 1: Python Basics & Setup
+Start with environment setup using Anaconda or Python.org. Learn variables, data types, and basic operations. Your first project: build a traditional calendar calculator that respects Indigenous lunar cycles alongside Gregorian dates.
+
+#### Module 2: Control Flow & Logic
+Master conditional statements and loops. Understand Boolean logic and operators. Project: Create a water usage tracker for garden irrigation optimization.
+
+#### Module 3: Data Structures
+Explore lists, tuples, dictionaries, and sets. Learn list comprehensions for elegant code. Project: Design a crop rotation planner using data structures.
+
+#### Module 4: Functions & Modules
+Write reusable code with functions. Organize code into modules. Project: Build a greenhouse monitoring system with modular components.
+
+### Phase 2: Intermediate (Weeks 9-16)
+
+**Goal:** Master essential programming techniques
+
+#### Module 5: Object-Oriented Programming
+Create classes and objects. Understand inheritance and polymorphism. Apply encapsulation principles. Project: Develop a market garden inventory system.
+
+#### Module 6: File Handling & Data Processing
+Read and write various file formats. Process CSV and JSON data. Implement error handling. Project: Build a community survey analyzer.
+
+#### Module 7: Scientific Computing
+Use NumPy for numerical operations. Analyze data with Pandas. Create visualizations with Matplotlib. Project: Design an agricultural data dashboard.
+
+#### Module 8: Engineering Applications
+Apply SciPy for scientific computing. Use SymPy for symbolic math. Understand control systems basics. Project: Create an irrigation optimization model.
+
+### Phase 3: Advanced (Weeks 17-24)
+
+**Goal:** Professional-level Python skills
+
+#### Module 9: Advanced Features
+Master decorators and generators. Use context managers. Implement async programming. Project: Build real-time sensor monitoring.
+
+#### Module 10: Database Integration
+Learn SQL basics with SQLite. Use SQLAlchemy ORM. Apply database design principles. Project: Create a community knowledge base.
+
+#### Module 11: Web Development & APIs
+Build with Flask framework. Design RESTful APIs. Integrate frontend technologies. Project: Develop an elder knowledge portal.
+
+#### Module 12: Machine Learning & AI
+Apply Scikit-learn fundamentals. Introduction to deep learning. Respect Indigenous data sovereignty. Project: Build a crop yield predictor.
+
+## Learning Philosophy: Two-Eyed Seeing
+
+This approach combines Western programming logic with Indigenous problem-solving wisdom:
+- **Holistic thinking** - See systems, not just code
+- **Relationship focus** - Code serves community needs
+- **Cyclical learning** - Revisit concepts with deeper understanding
+- **Practical application** - Every concept tied to real use
+
+## Setting Up Your Environment
+
+### Quick Start with Anaconda
+```bash
+# Download Anaconda from anaconda.com
+# Install with Python 3.11+
+# Verify installation
+conda --version
+python --version
+
+# Create learning environment
+conda create -n pylearn python=3.11
+conda activate pylearn
+```
+
+### Essential VS Code Setup
+Install these extensions for optimal Python development:
+- Python (Microsoft)
+- Pylint (linting)
+- Python Docstring Generator
+- Jupyter (for notebooks)
+- GitLens (version control)
+
+### Project Structure Template
+```
+PythonLearning/
+├── Module01_Basics/
+│   ├── lessons/
+│   ├── exercises/
+│   ├── projects/
+│   └── notes.md
+├── Module02_ControlFlow/
+└── Resources/
+    ├── cheatsheets/
+    └── references/
+```
+
+## Core Python Concepts
+
+### Variables and Data Types
+```python
+# Numbers
+age = 35  # integer
+height = 5.9  # float
+complex_num = 3 + 4j  # complex
+
+# Strings
+name = "Jason Cardinal"
+community = 'Bigstone Cree Nation'
+multiline = """
+This supports
+multiple lines
+"""
+
+# Booleans
+is_student = True
+is_complete = False
+
+# Collections
+plants = ["tomato", "lettuce", "carrots"]  # list
+coordinates = (54.0, -108.5)  # tuple
+config = {"debug": True, "version": 1.0}  # dictionary
+unique_items = {1, 2, 3, 3}  # set (stores {1, 2, 3})
+```
+
+### Control Flow Essentials
+```python
+# Conditional logic
+temperature = 22
+if temperature < 0:
+    print("Freezing - protect plants!")
+elif temperature < 10:
+    print("Cold - growth will be slow")
+elif temperature < 30:
+    print("Optimal growing temperature")
+else:
+    print("Too hot - provide shade")
+
+# Loops
+# For loop with enumerate
+crops = ["corn", "beans", "squash"]
+for index, crop in enumerate(crops, 1):
+    print(f"{index}. {crop}")
+
+# While loop with condition
+water_level = 100
+while water_level > 20:
+    print(f"Water level: {water_level}%")
+    water_level -= 10
+```
+
+### Functions: Building Blocks
+```python
+def calculate_planting_date(frost_date, days_before):
+    """
+    Calculate when to start seeds indoors.
+    
+    Args:
+        frost_date: Last expected frost (datetime)
+        days_before: Days to start before frost
+    
+    Returns:
+        Optimal planting date
+    """
+    from datetime import timedelta
+    return frost_date - timedelta(days=days_before)
+
+# Using default parameters
+def water_plant(plant_name, amount_ml=500):
+    return f"Watered {plant_name} with {amount_ml}ml"
+
+# Variable arguments
+def harvest_vegetables(*vegetables):
+    for veg in vegetables:
+        print(f"Harvested: {veg}")
+
+harvest_vegetables("tomatoes", "peppers", "lettuce")
+```
+
+## Object-Oriented Programming Basics
+
+```python
+class Plant:
+    """Represents a plant in our garden."""
+    
+    def __init__(self, name, species, days_to_harvest):
+        self.name = name
+        self.species = species
+        self.days_to_harvest = days_to_harvest
+        self.height = 0
+        self.water_level = 50
+        
+    def water(self, amount):
+        """Water the plant."""
+        self.water_level = min(100, self.water_level + amount)
+        return f"Watered {self.name}. Level: {self.water_level}%"
+    
+    def grow(self, days=1):
+        """Simulate growth."""
+        growth_rate = 0.5 * (self.water_level / 100)
+        self.height += growth_rate * days
+        self.water_level -= 5 * days
+
+# Creating and using objects
+tomato = Plant("Cherry Tomato", "Solanum lycopersicum", 65)
+print(tomato.water(30))
+tomato.grow(7)
+```
+
+## Practical Projects for Every Level
+
+### Beginner Projects
+1. **Temperature Converter** - Celsius/Fahrenheit with frost warnings
+2. **Garden Plot Calculator** - Area, perimeter, plant spacing
+3. **Seasonal Calendar** - Track planting/harvesting dates
+
+### Intermediate Projects
+1. **CSV Garden Logger** - Track plantings, harvests, yields
+2. **Weather Data Analyzer** - Process historical climate data
+3. **Inventory Manager** - Track seeds, tools, supplies
+
+### Advanced Projects
+1. **IoT Sensor Dashboard** - Real-time monitoring
+2. **Yield Prediction Model** - ML-based forecasting
+3. **Community Garden Portal** - Web app for coordination
+
+## Learning Resources
+
+### Daily Practice
+- **Code daily** - Even 15 minutes maintains momentum
+- **Read others' code** - GitHub exploration
+- **Solve problems** - LeetCode, HackerRank, Project Euler
+- **Document learning** - Keep a learning journal
+
+### Community Resources
+- Python.org documentation
+- Real Python tutorials
+- Stack Overflow community
+- Local Python user groups
+- Indigenous tech communities
+
+## Your Next Steps
+
+1. **Set up your environment** today
+2. **Write your first program** - Hello World with a twist
+3. **Commit to daily practice** - Build the habit
+4. **Join a community** - Learning together accelerates growth
+5. **Build something meaningful** - Code that serves your community
+
+Remember: Programming is a craft. Like traditional skills passed through generations, it requires patience, practice, and persistence. Start where you are, use what you have, do what you can. Your unique perspective—combining technical skills with cultural wisdom—will lead to innovations that serve both progress and tradition.
