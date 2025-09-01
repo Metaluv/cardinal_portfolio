@@ -236,20 +236,29 @@ export default function Home({ articles }) {
       </Head>
       <Container className="mt-9">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12">
-          <div className="flex-1 max-w-2xl">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+          {/* Profile image first on mobile, second on desktop */}
+          <div className="flex-shrink-0 order-1 lg:order-2">
+            <Image
+              src={profilePicture}
+              alt="Jason Cardinal"
+              className="h-48 w-48 sm:h-64 sm:w-64 lg:h-80 lg:w-80 xl:h-96 xl:w-96 object-contain mx-auto"
+              priority
+            />
+          </div>
+          <div className="flex-1 max-w-2xl order-2 lg:order-1">
+            <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl lg:text-5xl">
               Consultant for software, data, web, automation, and robotics.
             </h1>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
               I'm Jason Cardinal from Bigstone Cree Nation. I help organizations design and deliver practical technology—from production software and data workflows to modern websites, process automation, and early-stage robotics. I'm the founder of Cardinal Trading Co., based in Meadow Lake, Saskatchewan.
             </p>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex flex-wrap gap-4">
               <Button href="/services">View services</Button>
               <Button href="mailto:j@cardinaltrading.co" variant="secondary">
                 Contact
               </Button>
             </div>
-            <div className="mt-6 flex gap-6">
+            <div className="mt-6 flex flex-wrap gap-4 sm:gap-6">
               <SocialLink
                 href="https://twitter.com"
                 aria-label="Follow on Twitter"
@@ -271,14 +280,6 @@ export default function Home({ articles }) {
                 icon={LinkedInIcon}
               />
             </div>
-          </div>
-          <div className="flex-shrink-0">
-            <Image
-              src={profilePicture}
-              alt="Jason Cardinal"
-              className="h-64 w-64 lg:h-80 lg:w-80 xl:h-96 xl:w-96 object-contain mx-auto"
-              priority
-            />
           </div>
         </div>
       </Container>
