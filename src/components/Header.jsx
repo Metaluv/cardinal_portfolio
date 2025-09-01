@@ -220,7 +220,7 @@ function AvatarContainer({ className, ...props }) {
     <div
       className={clsx(
         className,
-        'h-10 w-10 rounded-lg bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
+        'h-12 w-12 rounded-lg bg-white/90 p-1 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
       )}
       {...props}
     />
@@ -238,10 +238,10 @@ function Avatar({ large = false, className, ...props }) {
       <Image
         src={ctcLogo}
         alt="Cardinal Trading Co."
-        sizes={large ? '4rem' : '2.25rem'}
+        sizes={large ? '5rem' : '3rem'}
         className={clsx(
-          'bg-white p-1 object-contain dark:bg-zinc-800',
-          large ? 'h-16 w-16' : 'h-9 w-9'
+          'bg-white p-2 object-contain rounded-lg dark:bg-zinc-800',
+          large ? 'h-20 w-20' : 'h-12 w-12'
         )}
         priority
       />
