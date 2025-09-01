@@ -236,7 +236,7 @@ export default function Home({ articles }) {
         />
       </Head>
       <Container className="mt-9">
-        <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-16 lg:items-center">
+        <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:gap-x-8 lg:items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               Consultant for software, data, web, automation, and robotics.
@@ -273,7 +273,7 @@ export default function Home({ articles }) {
               />
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-start">
             <Image
               src={profilePicture}
               alt="Jason Cardinal"
